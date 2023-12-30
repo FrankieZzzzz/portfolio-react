@@ -21,12 +21,12 @@
     align-items: center;
 
     img{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
 
-        @media screen and (min-width: 1800px){
-            width: 100px;
-            height: 100px;
+        @media screen and (min-width: 1200px){
+            width: 60px;
+            height: 60px;
         }
     }
 }
@@ -68,5 +68,89 @@
                 background: var(--mainPurple-color);
             }
         }
+    }
+    @media screen and (max-width: 780px) {
+        display: none;
+    }
+}
+.app__navbar-menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg{
+        width: 70%;
+        height: 70%;
+        color: var(--mainPurple-color);
+    }
+    // motion div
+    div{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 300;
+
+        padding: 1rem;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+
+        background: var(--deepBlue-color);
+        // menu button
+        svg{
+            width: 35px;
+            height: 35px;
+            margin: 0.5rem 1rem;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            margin-top: 3rem;
+            
+
+            li{
+                margin: 3rem 0.5rem;
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                a{
+                    text-decoration: none;
+                    color: var(--lightBlue-color);
+                    text-transform: uppercase;
+                    font-size: 56px;
+                    font-weight: 200;
+                    transition: all 300ms ease-in-out;
+                    
+                    &:hover {
+                        color: var(--mainPurple-color);
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 780px) {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 780px) {
+        display: none;
     }
 }
