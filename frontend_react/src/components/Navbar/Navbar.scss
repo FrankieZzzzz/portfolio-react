@@ -53,13 +53,18 @@
             color: var(--lightBlue-color);
             text-decoration: none;
             flex-direction: column;
-            
             text-transform: uppercase;
             font-weight: 300;
             transition: all 300ms ease-in-out;
-
+            font-size: 15px;
             &:hover {
                 color: var(--mainPurple-color);
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 18px;
+            }
+            @media screen and (min-width: 2000px) {
+                font-size: 22px;
             }
         }
 

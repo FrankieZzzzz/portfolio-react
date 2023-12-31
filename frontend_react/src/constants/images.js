@@ -1,4 +1,3 @@
-import Frankie from '../assets/Frankie.jpg';
 import Logo from '../assets/logo.png';
 import MagazineDesign from '../assets/magazine-design.jpg';
 import MaskPSA from '../assets/mask.jpg';
@@ -8,6 +7,8 @@ import TravelWeb from '../assets/Travel-website.jpg';
 import CaseStudy from '../assets/Ux-case-study.jpg';
 import WeatherApp from '../assets/weather-app.png';
 import WorldClock from '../assets/world-clock.png';
+import Frankie from '../assets/Frankie.png';
+
 
 export default{
     Frankie,
