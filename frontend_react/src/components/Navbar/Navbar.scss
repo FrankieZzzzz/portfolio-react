@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 1.5rem;
     background-color: var(--deepBlue-color);
 
     backdrop-filter: blur(4px);
@@ -14,6 +14,9 @@
     box-shadow: 5px 5px 30px 5px #08112183;
     position: fixed;
     z-index: 200;
+    @media screen and (min-width: 1200px) {
+        padding: 1.5rem 2.8rem;
+    }
 }
 .app__navbar-logo{
     display: flex;

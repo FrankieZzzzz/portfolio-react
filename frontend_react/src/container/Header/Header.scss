@@ -1,6 +1,9 @@
+.app__headerBox{
+    height: max-content;
+    background: var(--deepBlue-color);
+}
 #home{
     position: relative;
-    background: var(--deepBlue-color);
     .app__wrapper{
         padding: 0;
     }
@@ -10,16 +13,16 @@
     width: 100%;
     height: 100vh;
     flex-direction: row;
-    padding: 12rem 2rem 0em;
+    padding: 8rem 2.6rem 0em;
 
     @media screen and (max-width: 1200px) {
         flex-direction: column;
     }
     @media screen and (min-width: 1200px) {
-        padding: 0rem 6rem 0em;
+        padding: 0rem 10rem 0em;
     }
     @media screen and (min-width: 2000px) {
-        padding: 0rem 12rem 0em;
+        padding: 0rem 16rem 0em;
     }
 }
 .app_header-icon{
@@ -54,10 +57,11 @@
 
     @media screen and (max-width:1200px) {
         width: 100%;
-        margin-right: 0rem;
     }
 }
-.app__header-badge{
+.app__header-title,
+.app_header-mobileText{
+    // border: 1px solid red;
     width: 100%;
     height: 100%;
     display: flex;
@@ -65,8 +69,8 @@
     align-items: flex-start;
     flex-direction: column;
 
-    .badge-cmp{
-        padding: 2rem 2rem 0rem;
+    .header-title{
+        padding: 2rem 0rem 0rem;
         font-family: 'Courier Prime', monospace;
         font-size: 1rem;
         display: flex;
@@ -81,14 +85,14 @@
             padding-left: 1rem;
         }
     }
-    .tag-cmp{
+    .header-content{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 8rem 2rem 0rem;
+        padding: 8rem 0rem 0rem 1.8rem;
         font-family: Roboto;
         @media screen and (min-width:1200px) {
-            padding: 1rem 2rem 0rem;    
+            padding: 1rem 2rem 0rem 1.8rem;    
         }
         h1{
             font-size: 70px;
@@ -114,7 +118,7 @@
             @media screen and (min-width:780px) {
                 margin-top: 2rem;
                 width: 90%;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-weight: 200;
                 line-height: 190%;
                 color: var(--lightBlue-color);
@@ -140,7 +144,7 @@
             margin: 0px auto;
             object-fit: contain;
         }
-        @media screen and (min-width: 2000px) {
+        @media screen and (min-width: 1200px) {
             max-width: 75%;
         }
         @media screen and (min-width: 2000px) {
@@ -149,23 +153,66 @@
     }
 }
 .app_header-Deco{
-    width: 100%;
-    height: 100%;
     display: flex;
-    position: relative;
-    padding: 12rem 0rem 0rem;
-    @media screen and (min-width: 800px) {
-        padding: 6rem 0rem 0rem;
+    padding: 10rem 0rem 0em 0rem;
+    @media screen and (min-width: 780px) {
+        padding: 2rem 0rem 0rem;
     }
     @media screen and (min-width: 1200px) {
         display: none;
     }
     img{
-        max-width: 26%;
+        max-width: 65%;
         object-fit: contain;
         margin: 0px auto;
-        @media screen and (min-width: 800px) {
-            width: 20%;
+        @media screen and (min-width: 780px) {
+            display: none;
         }
+    }
+}
+#app__header-mobile{
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    padding: 8rem 2.6rem 0em;
+    background: var(--deepBlue-color);
+
+    .app_header-mobileText{
+        justify-content: flex-start;
+
+        .header-title{
+            padding: 0rem 0rem 0rem;
+        }
+       .app_mobileText-img{
+            display: block;
+            position: relative;
+            padding: 5rem 0rem 0rem 1.5rem;
+            max-width: 50%;
+            img {
+                max-width: 100%;
+                display: block;
+                object-fit: contain;
+                @media screen and (min-width: 650px) {
+                    max-width: 75%;
+                }
+            }
+        }
+        
+        .header-content{
+            padding: 2rem 0rem 0rem 1.8rem;
+            p{
+                margin-top: 0rem;
+                width: 90%;
+                font-size: 1rem;
+                font-weight: 200;
+                line-height: 190%;
+                color: var(--lightBlue-color);
+                display: block;
+            }
+        }
+    }
+    @media screen and (min-width: 780px) {
+        display: none;
     }
 }
