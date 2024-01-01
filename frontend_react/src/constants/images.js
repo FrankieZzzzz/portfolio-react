@@ -8,6 +8,7 @@ import CaseStudy from '../assets/Ux-case-study.jpg';
 import WeatherApp from '../assets/weather-app.png';
 import WorldClock from '../assets/world-clock.png';
 import Frankie from '../assets/Frankie.png';
+import Deco from '../assets/decoration.png';
 
 
 export default{
@@ -20,5 +21,6 @@ export default{
     TravelWeb,
     CaseStudy,
     WeatherApp,
-    WorldClock
+    WorldClock,
+    Deco
 }
