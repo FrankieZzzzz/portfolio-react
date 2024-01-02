@@ -24,31 +24,31 @@ export const ProjectCard = ({ title, description, imgUrl, netlify, behanceLink, 
     
     if(isMobile) {
         return(
-           <li className='app__workCard-Mobile'>
+            <li className='app__workCard-Mobile'>
                 <div className='projectBox'>
                     <img src={imgUrl} alt='project-item'/>
                 </div>
                 <div className='app__cardText-mobile'>
-                        <h4>{title}</h4>
-                        <span>{description}</span>
-                        <div className='app__cardIcon'>
-                            {behanceLink && (
-                                <a href={behanceLink} className='projectLink' target='_blank' rel="noreferrer">
-                                    <FontAwesomeIcon icon={faSquareBehance} />
-                                </a>
-                            )}
-                            {netlify && (
-                                <a href={netlify} className='projectLink' target='_blank' rel="noreferrer">
-                                    <FontAwesomeIcon icon={faCircleNodes} />
-                                </a>
-                            )}
-                            {gitHubLink && (
-                                <a href={gitHubLink} className='projectLink' target='_blank' rel="noreferrer">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            )}
-                        </div>
+                    <h4>{title}</h4>
+                    <span>{description}</span>
+                    <div className='app__cardIcon'>
+                        {behanceLink && (
+                            <a href={behanceLink} className='projectLink' target='_blank' rel="noreferrer">
+                                <FontAwesomeIcon icon={faSquareBehance} />
+                            </a>
+                        )}
+                        {netlify && (
+                            <a href={netlify} className='projectLink' target='_blank' rel="noreferrer">
+                                <FontAwesomeIcon icon={faCircleNodes} />
+                            </a>
+                        )}
+                        {gitHubLink && (
+                            <a href={gitHubLink} className='projectLink' target='_blank' rel="noreferrer">
+                                <FontAwesomeIcon icon={faGithub} />
+                            </a>
+                        )}
                     </div>
+                </div>
             </li>
         )
     }else {
