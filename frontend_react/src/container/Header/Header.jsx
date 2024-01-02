@@ -5,24 +5,13 @@ import  {motion} from 'framer-motion';
 import {images} from '../../constants';
 
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
-
-// const scaleVariants = {
-//     whileInView: {
-//       opacity: [0,1],
-//       transition: {
-//         duration:1,
-//         ease: 'easeInOut',
-//         scale: [0,1]
-//       }
-//     }
-//   }
+import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
   
   return (
-    <div className='app__headerBox'>
+    <section className='app__headerBox'>
       <div className='app__header app__flex' id='home'>
         {/* left side icon */}
         <motion.div
@@ -38,17 +27,17 @@ const Header = () => {
               </li>
               <li>
                 <a href='https://github.com/FrankieZzzzz'>
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li>
                 <a href='https://github.com/FrankieZzzzz'>
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faSquareBehance} />
                 </a>
               </li>
               <li>
                 <a href='https://github.com/FrankieZzzzz'>
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </li>
             
@@ -130,7 +119,7 @@ const Header = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   )
 }
 
