@@ -17,44 +17,71 @@ import {images} from '../../constants';
 const Work = () => {
   const projects =[
     {
-      title: 'project1',
-      description: 'project1',
-      imgUrl: images.WeatherApp
+      title: 'Toronto Weather App',
+      description: 'An app that updates weather data in real time',
+      imgUrl: images.WeatherApp,
+      gitHubLink: 'https://github.com/FrankieZzzzz',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
+
     },
     {
       title: 'project2',
       description: 'project2',
-      imgUrl: images.TravelWeb
+      imgUrl: images.TravelWeb,
+      gitHubLink: 'https://github.com/FrankieZzzzz',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
     },
     {
       title: 'project3',
       description: 'project3',
-      imgUrl: images.BrandDesign
+      imgUrl: images.BrandDesign,
+      gitHubLink: '',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: ''
     },
     {
       title: 'project4',
       description: 'project4',
-      imgUrl: images.WorldClock
+      imgUrl: images.WorldClock,
+      gitHubLink: 'https://github.com/FrankieZzzzz',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
     },
     {
       title: 'project5',
       description: 'project5',
-      imgUrl: images.CaseStudy
+      imgUrl: images.CaseStudy,
+      gitHubLink: '',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: ''
+
     },
     {
       title: 'project6',
       description: 'project6',
-      imgUrl: images.MaskPSA
+      imgUrl: images.MaskPSA,
+      gitHubLink: '',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: ''
+
     },
     {
       title: 'project7',
       description: 'project7',
-      imgUrl: images.MagazineDesign
+      imgUrl: images.MagazineDesign,
+      gitHubLink: '',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: ''
     },
     {
       title: 'project8',
       description: 'project8',
-      imgUrl: images.PosterDesign
+      imgUrl: images.PosterDesign,
+      gitHubLink: '',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: ''
     },
   ]
   return (

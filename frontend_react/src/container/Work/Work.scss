@@ -41,6 +41,9 @@
         @media screen and (max-width:1200px) {
             width: 100%;
         }
+        @media screen and (min-width:1200px) {
+            padding: 0rem 0rem 0rem;
+        }
     }
     .nav.nav-pills {
         width: 100%;
@@ -131,6 +134,8 @@
         .projectLink{
             text-decoration: none;
             color: white;
+            padding: 0rem 10px;
+            font-size: 1.5rem;
         }
     }
     img {
@@ -148,6 +153,9 @@
     transition: 0.5s ease-in-out;
     opacity: 0;
     width: 100%;
+    .app__cardIcon{
+        margin: 2rem 0px;
+    }
 }
 .projectBox:hover .app__cardText{
     top: 50%;
@@ -159,9 +167,54 @@
         line-height: 1.1em;
         }
     span {
-        font-style: italic;
         font-weight: 400;
         font-size: 15px;
         letter-spacing: 0.8px;
     }
+}
+
+
+
+.app__workCard-Mobile{
+    .projectBox {
+        position: relative;
+        overflow: hidden;
+        margin: 2rem 0rem;
+
+        @media screen and (min-width: 576px) {
+            margin: 1rem 0rem 0.5rem;
+        }
+        img {
+            object-fit: contain;
+            max-width: 100%;
+            border-radius: 1rem;
+        }
+    }
+    .app__cardText-mobile{
+        color: var(--lightBlue-color);
+        margin: 1rem 0rem 0rem 0.4rem;
+        h4 {
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            line-height: 1.1em;
+            margin: 0px;
+        }
+    
+        span {
+            font-weight: 200;
+            font-size: 12px;
+            letter-spacing: 0.8px;
+        }
+        .projectLink {
+            text-decoration: none;
+            color: white;
+            padding: 0rem 20px 0px 0px;
+            font-size: 1.5rem;
+        }
+        .app__cardIcon{
+            margin: 0px;
+        }
+    }
+    
 }

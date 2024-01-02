@@ -5,7 +5,7 @@ import  {motion} from 'framer-motion';
 import {images} from '../../constants';
 
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faEnvelope, faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
@@ -40,7 +40,11 @@ const Header = () => {
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </li>
-            
+              <li>
+                <a href='https://github.com/FrankieZzzzz'>
+                  <FontAwesomeIcon icon={faCircleNodes} />
+                </a>
+              </li>
             </ul>
         </motion.div>
         {/* left side icon */}
