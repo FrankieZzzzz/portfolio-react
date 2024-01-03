@@ -28,7 +28,7 @@ const Navbar = () => {
           {toggle && (
             <motion.div
               whileInView={{x: [-300, 0]}}
-              transition={{duration: 0.45, ease:'easeOut'}}>
+              transition={{duration: 0.55, ease:'easeOut'}}>
             <FontAwesomeIcon icon={faXmark} onClick={() => setToggle(false)} />
             <ul>
               {['About','Work','Experience','Contact'].map((item) => (
