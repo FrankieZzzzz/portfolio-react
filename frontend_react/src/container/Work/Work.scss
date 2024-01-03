@@ -1,0 +1,220 @@
+
+@import '~bootstrap/scss/bootstrap';
+.app__workBox{
+    flex: 1;
+    width: 100%;
+    height: max-content;
+    flex-direction: row;
+    padding: 0rem 2.6rem 0em;
+    background: var(--deepBlue-color);
+    @media screen and (min-width: 1200px) {
+            padding: 0rem 10rem 0em;
+        }
+    @media screen and (min-width: 2000px) {
+        padding: 0rem 16rem 0em;
+    }
+    
+    .app_header-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: max-content;
+        padding: 0rem 0rem 3rem;
+        .app__header-title{
+            .header-title{
+                font-family: 'Courier Prime', monospace;
+                font-size: 1rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                svg {
+                    color: var(--lightBlue-color);
+                }
+                span {
+                    font-size: 20px;
+                    padding-left: 1rem;
+                }
+            }
+        }
+        @media screen and (max-width:1200px) {
+            width: 100%;
+        }
+        @media screen and (min-width:1200px) {
+            padding: 0rem 0rem 0rem;
+        }
+    }
+    .nav.nav-pills {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        .nav-item{
+            width: 24%;
+            @media screen and (min-width: 1200px) {
+                width: 18%;
+            }
+            @media screen and (min-width: 2000px) {
+                width: 14%;
+            }
+        }
+        .nav-link {
+            background-color: transparent;
+            padding: 13px 12px;
+            color: #fff;
+            width: 100%;
+            font-size: 0.8rem;
+            font-weight: 400;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            text-align: center;
+            z-index: 0;
+            font-family: var(--content-font);
+        }
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: 0.3s ease-in-out;
+            border-radius: 2rem;
+        }
+
+        .nav-link.active::before {
+            width: 100% !important;
+        }
+    }
+    .container{
+        padding:0px;
+        .row{
+            div{
+                padding: 0px;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+.app__projectList{
+    width: 100%;
+    column-count: 1;
+    padding: 0px;
+    counter-reset: count;
+    margin: 0rem auto;
+    @media screen and (min-width: 1200px) {
+        column-count: 2;
+    }
+    
+}
+.app__workCard{
+    .projectBox{
+        position: relative;
+        overflow: hidden;
+        margin: 1rem 0rem;
+    
+        @media screen and (min-width: 576px) {
+            margin: 1rem 0rem 0.5rem;
+        }
+        &::before {
+            content: "";
+            background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+            opacity: 0.85;
+            position: absolute;
+            width: 100%;
+            height: 0;
+            transition: 0.4s ease-in-out;
+            border-radius: 1rem;
+        }
+        &:hover::before {
+            height: 100%;
+        }
+        .projectLink{
+            text-decoration: none;
+            color: white;
+            padding: 0rem 10px;
+            font-size: 1.5rem;
+        }
+    }
+    img {
+        object-fit: contain;
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+}
+.app__cardText{
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    .app__cardIcon{
+        margin: 2rem 0px;
+    }
+}
+.projectBox:hover .app__cardText{
+    top: 50%;
+    opacity: 1;
+    h4 {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        line-height: 1.1em;
+        }
+    span {
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 0.8px;
+    }
+}
+
+
+
+.app__workCard-Mobile{
+    .projectBox {
+        position: relative;
+        overflow: hidden;
+        margin: 2rem 0rem;
+
+        @media screen and (min-width: 576px) {
+            margin: 1rem 0rem 0.5rem;
+        }
+        img {
+            object-fit: contain;
+            max-width: 100%;
+            border-radius: 1rem;
+        }
+    }
+    .app__cardText-mobile{
+        color: var(--lightBlue-color);
+        margin: 1rem 0rem 0rem 0.4rem;
+        h4 {
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            line-height: 1.1em;
+            margin: 0px;
+        }
+    
+        span {
+            font-weight: 200;
+            font-size: 12px;
+            letter-spacing: 0.8px;
+        }
+        .projectLink {
+            text-decoration: none;
+            color: white;
+            padding: 0rem 20px 0px 0px;
+            font-size: 1.5rem;
+        }
+        .app__cardIcon{
+            margin: 0px;
+        }
+    }
+    
+}
