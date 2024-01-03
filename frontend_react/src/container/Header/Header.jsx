@@ -26,22 +26,22 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href='https://www.linkedin.com/in/weinizhong73/'>
+                <a href='https://github.com/FrankieZzzzz'>
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li>
-                <a href='https://www.behance.net/zhongweini0703'>
+                <a href='https://github.com/FrankieZzzzz'>
                   <FontAwesomeIcon icon={faSquareBehance} />
                 </a>
               </li>
               <li>
-                <a href='"mailto:zhongweini0703@gmail.com"'>
+                <a href='https://github.com/FrankieZzzzz'>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </li>
               <li>
-                <a href='https://app.netlify.com/teams/frankiezzzzz/overview'>
+                <a href='https://github.com/FrankieZzzzz'>
                   <FontAwesomeIcon icon={faCircleNodes} />
                 </a>
               </li>

@@ -20,67 +20,67 @@ const Work = () => {
       title: 'Toronto Weather App',
       description: 'An app that updates weather data in real time',
       imgUrl: images.WeatherApp,
-      gitHubLink: 'https://github.com/FrankieZzzzz/toronto-weather-app-react',
-      behanceLink:'https://www.behance.net/gallery/187129193/Weather-App-Design-Web-Design',
-      netlify: 'https://toronto-weather-app-react.netlify.app/'
+      gitHubLink: 'https://github.com/FrankieZzzzz',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
 
     },
     {
-      title: 'Travel Landing page | web design',
-      description: 'Banff National Park Landing page',
+      title: 'project2',
+      description: 'project2',
       imgUrl: images.TravelWeb,
-      gitHubLink: 'https://github.com/FrankieZzzzz/parkcanada.com_Travel-website-Landing-Page',
-      behanceLink:'https://www.behance.net/gallery/186936805/Travel-Landing-page-web-design',
-      netlify: 'https://parkcanada.netlify.app/'
+      gitHubLink: 'https://github.com/FrankieZzzzz',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
     },
     {
-      title: 'Actif',
-      description: 'Athletic Apparel Brand Design',
+      title: 'project3',
+      description: 'project3',
       imgUrl: images.BrandDesign,
       gitHubLink: '',
-      behanceLink:'https://www.behance.net/gallery/171346859/Logo-Visual-identity-Logo-design-Modern-logo',
+      behanceLink:'https://www.behance.net/zhongweini0703',
       netlify: ''
     },
     {
-      title: 'World Clock App',
-      description: 'Real time update time for cities',
+      title: 'project4',
+      description: 'project4',
       imgUrl: images.WorldClock,
-      gitHubLink: 'https://github.com/FrankieZzzzz/World-Clock-App',
-      behanceLink:'',
-      netlify: 'https://toronto-world-clock-site.netlify.app/'
+      gitHubLink: 'https://github.com/FrankieZzzzz',
+      behanceLink:'https://www.behance.net/zhongweini0703',
+      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
     },
     {
-      title: 'NaturCycle-Skincare Case Study',
-      description: 'UI UX design',
+      title: 'project5',
+      description: 'project5',
       imgUrl: images.CaseStudy,
       gitHubLink: '',
-      behanceLink:'https://www.behance.net/gallery/186803485/NaturCycle-Skincare-App-UIUX-Case-Study',
+      behanceLink:'https://www.behance.net/zhongweini0703',
       netlify: ''
 
     },
     {
-      title: 'PSA Campaign Posters',
-      description: 'use the same photo to design two posters with different meanings',
+      title: 'project6',
+      description: 'project6',
       imgUrl: images.MaskPSA,
       gitHubLink: '',
-      behanceLink:'https://www.behance.net/gallery/169441407/PSA-Campaign-Posters',
+      behanceLink:'https://www.behance.net/zhongweini0703',
       netlify: ''
 
     },
     {
-      title: 'Magezine Design: My little airport',
-      description: 'HongKong indie music band',
+      title: 'project7',
+      description: 'project7',
       imgUrl: images.MagazineDesign,
       gitHubLink: '',
-      behanceLink:'https://www.behance.net/gallery/169965059/Magezine-Design-My-little-airport',
+      behanceLink:'https://www.behance.net/zhongweini0703',
       netlify: ''
     },
     {
-      title: 'Movie Poster Design',
-      description: 'Only three colors to design three movie posters.',
+      title: 'project8',
+      description: 'project8',
       imgUrl: images.PosterDesign,
       gitHubLink: '',
-      behanceLink:'https://www.behance.net/gallery/169612451/POSTER-DESIGN',
+      behanceLink:'https://www.behance.net/zhongweini0703',
       netlify: ''
     },
   ]
@@ -147,10 +147,13 @@ const Work = () => {
                 </Tab.Container>
               </div>}
             </TrackVisibility>
+
+            
           </Col>
         </Row>
       </Container>
     </section>
   )
 }
+
 export default Work
