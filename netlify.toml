@@ -5,5 +5,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/frontend_react/public/index.html"
+  to = "index.html"
   status = 200
