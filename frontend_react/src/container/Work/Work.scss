@@ -1,11 +1,10 @@
 
-@import '~bootstrap/scss/bootstrap';
 .app__workBox{
     flex: 1;
     width: 100%;
     height: max-content;
     flex-direction: row;
-    padding: 0rem 2.6rem 0em;
+    padding: 0rem 1rem 0em;
     background: var(--deepBlue-color);
     @media screen and (min-width: 1200px) {
             padding: 0rem 10rem 0em;
@@ -20,7 +19,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         height: max-content;
-        padding: 2rem 0rem 3rem;
+        padding: 0rem 0rem 3rem;
         .app__header-title{
             .header-title{
                 font-family: 'Courier Prime', monospace;
@@ -61,7 +60,7 @@
         .nav-link {
             background-color: transparent;
             padding: 13px 12px;
-            background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+            color: #fff;
             width: 100%;
             font-size: 0.8rem;
             font-weight: 400;

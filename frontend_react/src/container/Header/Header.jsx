@@ -11,7 +11,7 @@ import {AppWrap} from '../../wrapper';
 const Header = () => {
   
   return (
-    <section className='app__headerBox' id={Header}>
+    <section className='app__headerBox'>
       <div className='app__header app__flex' id='home'>
         {/* left side icon */}
         <motion.div

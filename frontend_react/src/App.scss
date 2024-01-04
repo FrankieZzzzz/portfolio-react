@@ -130,19 +130,19 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 1rem;
+    padding: 1rem 0.5rem 1rem;
 
     .app__navigation-dot {
         width: 10px;
         height: 10px;
         border-radius: 50%;
         background-color: #cbcbcb;
-        margin: 0.5rem;
+        margin: 0.5rem 0.5rem 0.5rem 0rem; 
 
         transition: background-color 0.2s ease-in-out;
 
         &:hover {
-            background-color: var(--lightBlue-color);
+            background-color: var(--mainPurple-color);
         }
 
         @media screen and (min-width: 2000px) {

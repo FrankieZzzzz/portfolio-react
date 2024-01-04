@@ -4,18 +4,7 @@ import './Work.scss';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import { faCircleNodes } from "@fortawesome/free-solid-svg-icons";
-// import {images} from '../../constants';
-// import { urlFor, client } from '../../client';
-//    const [work, setWork] = useState([]);
-
-//     useEffect(() => {
-//         const query = '*[_type == "works"]';
-
-//         client.fetch(query)
-//           .then((data) => { setWork(data) })
-//     }, [])
   
-
 export const ProjectCard = ({ title, description, imgUrl, netlify, behanceLink, gitHubLink }) =>{
     
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
