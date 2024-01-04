@@ -1,21 +1,21 @@
 export default{
-    name:'skills',
-    title:'Skills',
+    name:'backgroundImage',
+    title:'BackgroundImage',
     type: 'document',
     fields:[
         {
-            name:'name',
-            title:'Name',
+            name:'title',
+            title:'Title',
             type:'string'
         },
         {
-            name:'bgColor',
-            title:'BgColor',
+            name:'description',
+            title:'Description',
             type:'string'
         },
         {
-            name:'icon',
-            title:'Icon',
+            name:'imgUrl',
+            title:'ImgUrl',
             type: 'image',
             options: {
               hotspot: true,

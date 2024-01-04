@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './Work.scss';
 import  {motion} from 'framer-motion';
 // import {images} from '../../constants';
@@ -10,11 +10,14 @@ import { ProjectCard } from './WorkCard';
 import TrackVisibility from 'react-on-screen';
 import {images} from '../../constants';
 
+import {AppWrap} from '../../wrapper';
+
 
 
 
 
 const Work = () => {
+
   const projects =[
     {
       title: 'Toronto Weather App',
@@ -85,7 +88,7 @@ const Work = () => {
     },
   ]
   return (
-    <section className='app__workBox'>
+    <section id={Work} className='app__workBox'>
       <motion.div
         whileInView={{x:[-100,0],opacity:[0,1]}}
         transition={{duration: 0.8}}
@@ -147,8 +150,6 @@ const Work = () => {
                 </Tab.Container>
               </div>}
             </TrackVisibility>
-
-            
           </Col>
         </Row>
       </Container>
@@ -156,4 +157,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default AppWrap(Work, 'Work')

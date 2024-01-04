@@ -20,7 +20,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         height: max-content;
-        padding: 0rem 0rem 3rem;
+        padding: 2rem 0rem 3rem;
         .app__header-title{
             .header-title{
                 font-family: 'Courier Prime', monospace;
@@ -175,6 +175,7 @@
 
 
 .app__workCard-Mobile{
+    margin: 0rem 0rem 1.5rem;
     .projectBox {
         position: relative;
         overflow: hidden;
@@ -192,24 +193,29 @@
     .app__cardText-mobile{
         color: var(--lightBlue-color);
         margin: 1rem 0rem 0rem 0.4rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
         h4 {
-            font-size: 25px;
-            font-weight: 700;
+            font-size: 1.5rem;
+            font-weight: 500;
             letter-spacing: 0.8px;
-            line-height: 1.1em;
+            line-height: 1.25em;
             margin: 0px;
         }
     
         span {
-            font-weight: 200;
+            font-weight: 300;
             font-size: 12px;
             letter-spacing: 0.8px;
+            font-size: 0.875rem;
+            line-height: 1.25em;
         }
         .projectLink {
             text-decoration: none;
             color: white;
             padding: 0rem 20px 0px 0px;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
         .app__cardIcon{
             margin: 0px;

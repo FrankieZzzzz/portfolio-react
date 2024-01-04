@@ -1,17 +1,17 @@
 import React from 'react'
 import './Header.scss';
 
-import  {motion} from 'framer-motion';
+import {motion} from 'framer-motion';
 import {images} from '../../constants';
 
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faArrowRight, faEnvelope, faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
-
+import {AppWrap} from '../../wrapper';
 const Header = () => {
   
   return (
-    <section className='app__headerBox'>
+    <section className='app__headerBox' id={Header}>
       <div className='app__header app__flex' id='home'>
         {/* left side icon */}
         <motion.div
@@ -127,4 +127,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default AppWrap(Header, 'Header')
