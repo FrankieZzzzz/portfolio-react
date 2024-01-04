@@ -25,6 +25,11 @@ export default {
         type: 'string',
       },
       {
+        name: 'netlify',
+        title: 'Netlify',
+        type: 'string',
+      },
+      {
         name: 'imgUrl',
         title: 'ImageUrl',
         type: 'image',
