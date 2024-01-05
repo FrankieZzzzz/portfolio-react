@@ -8,6 +8,10 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faArrowRight, faEnvelope, faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import {AppWrap} from '../../wrapper';
+
+import {MotionWrap} from '../../wrapper'
+
+
 const Header = () => {
   
   return (

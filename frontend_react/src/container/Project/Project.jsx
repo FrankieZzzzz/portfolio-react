@@ -89,6 +89,7 @@ const Project = () => {
                                     <div className='app__project-text'>
                                         <h4>{work.title}</h4>
                                     </div> 
+                                   
                                     <div className='app__project-iconBox'>
                                         <motion.div
                                         whileHover={{opacity: [0,1]}}

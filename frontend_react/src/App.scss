@@ -10,6 +10,9 @@
 .app__primarybg {
     background-color: var(--deepBlue-color);
 }
+.app__lightbg{
+    background-color: var(--lightBlue-color);
+}
 .app__container {
     width: 100%;
     min-height: 100vh;
@@ -130,14 +133,14 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 1rem 0.5rem 1rem;
+    padding: 1rem 1.5rem 1rem;
 
     .app__navigation-dot {
         width: 10px;
         height: 10px;
         border-radius: 50%;
         background-color: #cbcbcb;
-        margin: 0.5rem 0.5rem 0.5rem 0rem; 
+        margin: 0.5rem 0rem; 
 
         transition: background-color 0.2s ease-in-out;
 

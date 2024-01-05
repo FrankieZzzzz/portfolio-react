@@ -18,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-on-screen": "^2.1.1",
     "react-scripts": "5.0.1",
+    "react-tooltip": "^5.25.1",
     "sass": "^1.69.6",
     "web-vitals": "^2.1.4"
   },

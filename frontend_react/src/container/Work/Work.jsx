@@ -92,7 +92,7 @@ const Work = () => {
       <motion.div
         whileInView={{x:[-100,0],opacity:[0,1]}}
         transition={{duration: 0.8}}
-        className='app_header-info'
+        className='app__header-info'
       >
         <div className='app__header-title'>
           <div className='header-title app_flex'>
