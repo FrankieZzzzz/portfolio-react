@@ -1,8 +1,9 @@
 import React from 'react'
-import './Experience.scss';
-const Experience = () => {
+
+function Experience() {
   return (
     <div>
+      
     </div>
   )
 }
