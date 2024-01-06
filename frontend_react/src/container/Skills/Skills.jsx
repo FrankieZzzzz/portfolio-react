@@ -3,8 +3,6 @@ import './Skills.scss';
 import '../Project/Project.scss'
 
 import { Tooltip as ReactTooltip } from 'react-tooltip'
-// import {Tooltip as ReactTooltip} from 'react-tooltip'
-// import * as ReactTooltip from 'react-tooltip'
 import  {motion} from 'framer-motion';
 import {AppWrap} from '../../wrapper';
 import { urlFor, client } from '../../client'
@@ -19,7 +17,6 @@ const Skills = () => {
     const query = '*[_type == "experiences"]';
     const skillQuery = '*[_type == "skills"]';
     
-
     client.fetch(query)
     .then((data)=> {
         console.log(data);
@@ -29,7 +26,6 @@ const Skills = () => {
     .then((data)=> {
         setSkills(data);
     })
-    
   }, [])
   return (
     <div className='app__skills'>

@@ -9,7 +9,7 @@ import { faArrowRight, faEnvelope, faCircleNodes } from "@fortawesome/free-solid
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import {AppWrap} from '../../wrapper';
 
-import {MotionWrap} from '../../wrapper'
+// import {MotionWrap} from '../../wrapper'
 
 
 const Header = () => {

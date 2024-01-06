@@ -1,7 +1,7 @@
 // 最外侧box
 .app__projects,
-.app__skills{
-    flex: 1;
+.app__skills,
+.app__footer{
     width: 100%;
     flex-direction: column;
     padding: 0rem 1rem 0em;
@@ -30,6 +30,8 @@
                 flex-direction: row;
                 align-items: center;
                 color: var(--lightBlue-color);
+
+                margin-top: 8rem;
 
                 span {
                     font-size: 20px;

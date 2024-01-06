@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import  {motion} from 'framer-motion';
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import {AppWrap} from '../../wrapper';
 import './Project.scss';
+
+import  {motion} from 'framer-motion';
+
+import {AppWrap} from '../../wrapper';
 import { urlFor, client } from '../../client'
+
 import {faGithub, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import { faCircleNodes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Project = () => {
 

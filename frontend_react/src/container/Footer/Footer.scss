@@ -1,0 +1,151 @@
+
+.app__footer-cards{
+    margin: 0rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .app__footer-card{
+        width: 90%;
+
+        color: var(--lightBlue-color);
+        margin: 0rem 0rem 3rem 1rem;
+        
+        h5{
+            font-size: 56px;
+            font-weight: 300;
+            padding: 0.6rem 0rem;
+        }
+        p{
+            font-size: 0.875rem;
+            font-weight: 300;
+            padding: 1rem 0rem;
+            opacity: 0.7;
+        }
+        a{
+            font-size: 18px;
+            font-weight: 200;
+            left: 0px;
+            transition: all 300ms ease-in;
+
+            &:hover{
+                position: relative;
+                left: 10px;
+            }
+        }
+    }
+
+    .app__footer-form{
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-end;
+
+        margin: 0.5rem 1rem;
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 0 2rem 0;
+            cursor: pointer;
+
+            transition: all 0.3s ease-in-out;
+            label{
+                color: var(--lightBlue-color);
+                padding-bottom: 2rem;
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+
+            input{
+                all: unset;
+                width: 100%;
+                background: none;
+                font-weight: 100;
+                color: var(--lightBlue-color);
+                border-bottom: 1px solid grey;
+
+                &::placeholder{
+                    color: var(--lightBlue-color);
+                    padding: 1rem;
+                }
+            }
+            
+
+        }
+        button {
+            background: none;
+            border: none;
+            font-size: 16px;
+
+            span{
+                padding: 0 1rem;
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+.app__footer-bottomBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0;
+
+
+    button{
+        width: max-content;
+        margin: 0px auto;
+        background: none;
+        border-radius: 50%;
+        padding: 30px;
+        color: var(--lightBlue-color);
+        border: 1px solid var(--lightBlue-color);
+        
+    }
+    div{
+        p{
+            text-align: center;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 160%;
+            color: var(--lightBlue-color);
+            opacity: 0.5;
+            padding: 1rem 2rem;
+            a{
+                color: var(--mainPurple-color);
+                cursor: pointer;
+                transition: all 300ms ease-in-out;
+
+                &:hover{
+                    color: var(--lightBlue-color);
+                }
+            }
+        }
+    }
+}
+.app__footer-icon{
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        list-style: none;
+        padding-top: 1rem;
+        li {
+            padding: 1rem 1rem 0rem;
+
+            a {
+                color: var(--mainPurple-color);
+                opacity: 0.7;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+       display: none;
+    }
+}
