@@ -161,9 +161,16 @@
         li {
             padding: 1rem 1rem 0rem;
             a {
-                color: var(--mainPurple-color);
+                color: var(--lightBlue-color);
                 opacity: 0.7;
                 font-size: 1.2rem;
+                transition: all 300ms ease-in-out;
+                position: relative;
+                bottom: 0px;
+                &:hover{
+                    color: var(--mainPurple-color);
+                    bottom: 5px;
+                }
             }
         }
     }
