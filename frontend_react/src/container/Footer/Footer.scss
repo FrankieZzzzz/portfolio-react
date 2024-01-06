@@ -1,99 +1,112 @@
 
-.app__footer-cards{
-    margin: 9rem 0rem 2rem;
+.app__footer-box{
     display: flex;
     flex-direction: column;
-
-    .app__footer-card{
-        width: 90%;
-
-        color: var(--lightBlue-color);
-        margin: 0rem 2.5rem 3rem 1rem;
-        h5{
-            font-size: 56px;
-            font-weight: 300;
-            padding: 0.6rem 0rem;
-        }
-        p{
-            font-size: 0.875rem;
-            font-weight: 300;
-            padding: 1rem 0rem;
-            opacity: 0.7;
-        }
-        a{
-            font-size: 18px;
-            font-weight: 200;
-            left: 0px;
-            transition: all 300ms ease-in;
-
-            &:hover{
-                position: relative;
-                left: 10px;
-            }
-        }
+    align-items: center;
+    justify-content: space-between;
+    margin: 9rem 0rem 2rem;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
     }
+}
 
-    .app__footer-form{
-        width: 90%;
-        flex-direction: column;
-        align-items: flex-end;
+.app__footer-card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: var(--lightBlue-color);
+    margin: 0rem 0rem 3rem 0rem;
+    h5{
+        font-size: 56px;
+        font-weight: 300;
+        padding: 0.6rem 0rem;
+    }
+    p{
+        font-size: 0.875rem;
+        font-weight: 300;
+        padding: 1rem 0rem;
+        opacity: 0.7;
+    }
+    a{
+        font-size: 18px;
+        font-weight: 200;
+        left: 0px;
+        transition: all 300ms ease-in;
 
-        margin: 0.5rem 1rem;
-        div{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 0 0 2rem 0;
-            cursor: pointer;
-
-            transition: all 0.3s ease-in-out;
-            label{
-                color: var(--lightBlue-color);
-                padding-bottom: 2rem;
-                font-size: 0.875rem;
-                font-weight: 400;
-            }
-
-            input{
-                all: unset;
-                width: 100%;
-                background: none;
-                font-weight: 100;
-                color: var(--lightBlue-color);
-                border-bottom: 1px solid grey;
-
-                &::placeholder{
-                    color: var(--lightBlue-color);
-                    padding: 1rem;
-                }
-            }
-        }
-        // submit button
-        button {
-                
-            background: none;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
+        &:hover{
             position: relative;
-            color: var(--lightBlue-color);
-            left: 0px;
-            transition: all 300ms ease-in-out;
+            left: 10px;
+        }
+    }
+}
+.app__footer-form {
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 
-            &:hover{
-                left: 10px;
-                color: var(--mainPurple-color);
-            }
-            span{
-                padding: 0 1rem;
+    margin: 3.5rem 1rem;
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 2rem 0;
+        cursor: pointer;
+
+        transition: all 0.3s ease-in-out;
+
+        label {
+            width: 100%;
+            color: var(--lightBlue-color);
+            padding-bottom: 1rem;
+            font-size: 0.875rem;
+            font-weight: 400;
+        }
+
+        input {
+            all: unset;
+            width: 100%;
+            background: none;
+            font-weight: 100;
+            color: var(--lightBlue-color);
+            border-bottom: 1.2px solid rgb(187, 222, 251, 0.35);
+            padding: 0.5rem 0;
+
+            &::placeholder {
+                color: var(--lightBlue-color);
+                padding: 1rem;
             }
         }
     }
 
+    // submit button
+    button {
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        color: var(--lightBlue-color);
+        left: 0px;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            left: 10px;
+            background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        span {
+            padding: 0 0.5rem;
+        }
+    }
 
     @media screen and (min-width: 768px) {
-        flex-direction: row;
+    width: 50%;
+        flex-direction: column;
         align-items: center;
     }
 }
@@ -102,7 +115,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 8rem 0 0;
-
 
     button{
         width: max-content;
@@ -114,16 +126,14 @@
         border: 1px solid var(--lightBlue-color);
         cursor: pointer;
         @media screen and (min-width: 1200px) {
-                display: none;
-            }
-        
+            display: none;
+        }
     }
     div{
         p{
             text-align: center;
             font-size: 12px;
             font-weight: 300;
-            line-height: 160%;
             color: var(--lightBlue-color);
             opacity: 0.5;
             padding: 1rem 2rem;
@@ -150,13 +160,30 @@
         padding-top: 1rem;
         li {
             padding: 1rem 1rem 0rem;
-
             a {
                 color: var(--mainPurple-color);
                 opacity: 0.7;
-                font-size: 1.6rem;
+                font-size: 1.2rem;
             }
         }
     }
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+.app__footer-message {
     
+    div{
+        font-size: 2rem;
+        text-align: end;
+    }
+    span{
+        line-height: 1.5;
+        padding: 0rem 1rem;
+
+        background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 }

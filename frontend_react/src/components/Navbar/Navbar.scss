@@ -49,7 +49,6 @@
             height: 5px;
             background: transparent;
             border-radius: 50%;
-
             margin-right: 8px;
         }
         a{
@@ -61,7 +60,11 @@
             transition: all 300ms ease-in-out;
             font-size: 0.875rem;
             &:hover {
-                color: var(--mainPurple-color);
+                background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                /* Set text color to transparent */
             }
             @media screen and (min-width: 1200px) {
                 font-size: 1rem;

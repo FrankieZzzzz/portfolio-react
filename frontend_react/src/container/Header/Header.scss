@@ -39,7 +39,7 @@
 .app_header-icon{
     position: fixed;
     left: 0;
-    bottom: 50px;
+    bottom: 90px;
     z-index: 500;
     padding: 0rem 0rem 0rem 3rem;
     ul{
@@ -62,6 +62,9 @@
             }
         }
         }
+    }
+    @media screen and (max-width: 1200px) {
+        display: none;
     }
 }
 

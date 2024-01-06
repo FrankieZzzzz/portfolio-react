@@ -11,14 +11,11 @@ import {AppWrap} from '../../wrapper';
 
 // import {MotionWrap} from '../../wrapper'
 
-
 const Header = () => {
   const controls = useAnimation();
   useEffect(() => {
     controls.start({x: 0, opacity:1});}
     , [controls]);
-
-
 
   return (
     <section className='app__headerBox' id='About'>
