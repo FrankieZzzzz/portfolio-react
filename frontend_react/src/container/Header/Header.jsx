@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Header.scss';
 
-import {motion} from 'framer-motion';
+import {motion, useAnimation} from 'framer-motion';
 import {images} from '../../constants';
 
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -13,14 +13,21 @@ import {AppWrap} from '../../wrapper';
 
 
 const Header = () => {
-  
+  const controls = useAnimation();
+  useEffect(() => {
+    controls.start({x: 0, opacity:1});}
+    , [controls]);
+
+
+
   return (
-    <section className='app__headerBox'>
+    <section className='app__headerBox' id='About'>
       <div className='app__header app__flex' id='home'>
         {/* left side icon */}
         <motion.div
           whileInView={{x:[-50,0],opacity:[0.5,1]}}
           transition={{duration: 0.4}}
+          animate= {controls}
           className='app_header-icon'
         >
           <ul>
@@ -49,7 +56,7 @@ const Header = () => {
                   <FontAwesomeIcon icon={faCircleNodes} />
                 </a>
               </li>
-            </ul>
+          </ul>
         </motion.div>
         {/* left side icon */}
         {/* textcontent */}

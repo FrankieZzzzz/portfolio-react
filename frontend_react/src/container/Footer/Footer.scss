@@ -1,6 +1,6 @@
 
 .app__footer-cards{
-    margin: 0rem 0rem 2rem;
+    margin: 9rem 0rem 2rem;
     display: flex;
     flex-direction: column;
 
@@ -8,8 +8,7 @@
         width: 90%;
 
         color: var(--lightBlue-color);
-        margin: 0rem 0rem 3rem 1rem;
-        
+        margin: 0rem 2.5rem 3rem 1rem;
         h5{
             font-size: 56px;
             font-weight: 300;
@@ -69,14 +68,23 @@
                     padding: 1rem;
                 }
             }
-            
-
         }
+        // submit button
         button {
+                
             background: none;
             border: none;
             font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            color: var(--lightBlue-color);
+            left: 0px;
+            transition: all 300ms ease-in-out;
 
+            &:hover{
+                left: 10px;
+                color: var(--mainPurple-color);
+            }
             span{
                 padding: 0 1rem;
             }
@@ -86,23 +94,28 @@
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
+        align-items: center;
     }
 }
 .app__footer-bottomBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 8rem 0 0;
 
 
     button{
         width: max-content;
         margin: 0px auto;
         background: none;
-        border-radius: 50%;
-        padding: 30px;
+        border-radius: 80%;
+        padding: 2.4rem;
         color: var(--lightBlue-color);
         border: 1px solid var(--lightBlue-color);
+        cursor: pointer;
+        @media screen and (min-width: 1200px) {
+                display: none;
+            }
         
     }
     div{
@@ -145,7 +158,5 @@
             }
         }
     }
-    @media screen and (min-width: 768px) {
-       display: none;
-    }
+    
 }

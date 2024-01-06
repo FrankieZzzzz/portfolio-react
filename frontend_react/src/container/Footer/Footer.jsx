@@ -38,6 +38,7 @@ const Footer = () => {
         setIsFormSubmitted(true)
      })
   }
+
   return (
     <div className='app__footer'>
       {/* title */}
@@ -47,7 +48,7 @@ const Footer = () => {
         className='app_project-info'
       >
         <div className='project-title'>
-          <div className='header-title app_flex'>
+          <div className='header-title '>
               <FontAwesomeIcon icon={faArrowRight} />
               <span className='p-text'>What's Nest?</span>
           </div>
@@ -76,10 +77,6 @@ const Footer = () => {
               <label for='message'>Message</label>
               <input className='p-text' type="text" name="message" value={message} onChange={handleChangeInput} id='message' />
             </div>
-            {/* <div className='input-box'>
-              <label for='message'>Message</label>
-              <input className='p-text' value={message} name={message} type="text"  onChange={handleChangeInput} id='message' />
-            </div> */}
             <button type='button' className='p-text'onClick={handleChangeSubmit}>{loading ? 'Sending' : 'Send Message'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
           </div>
         </div>

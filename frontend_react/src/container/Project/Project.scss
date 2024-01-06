@@ -12,9 +12,8 @@
     }
 
     @media screen and (min-width: 2000px) {
-        padding: 0rem 16rem 0em;
+        padding: 0rem 18rem 0em;
     }
-
 // 标题
     .app_project-info {
         display: flex;
@@ -22,6 +21,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         padding: 2rem 0rem 3rem;
+        
         .project-title {
             .header-title {
                 font-family: 'Courier Prime', monospace;
@@ -31,7 +31,7 @@
                 align-items: center;
                 color: var(--lightBlue-color);
 
-                margin-top: 8rem;
+                margin-top: 2rem;
 
                 span {
                     font-size: 20px;
@@ -80,6 +80,9 @@
             background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
         }
     }
+}
+.header-title{
+    padding: 2rem 0rem 0em;
 }
 // mobile css
 .app__projects-contentMobile{
