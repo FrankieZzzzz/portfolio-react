@@ -39,7 +39,7 @@ const Footer = () => {
   }
 
   return (
-    <div className='app__footer'>
+    <div className='app__footer '>
       {/* title */}
       <motion.div
         whileInView={{x:[-100,0],opacity:[0,1]}}

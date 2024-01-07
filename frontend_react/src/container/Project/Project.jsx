@@ -55,7 +55,7 @@ const Project = () => {
 
     if (isMobile){
         return (
-            <div className='app__projects' id='Project'>
+            <div className='app__projects ' id='Project'>
                 <motion.div
                     whileInView={{x:[-100,0],opacity:[0,1]}}
                     transition={{duration: 0.8}}

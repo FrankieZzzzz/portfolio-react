@@ -28,7 +28,7 @@ const Skills = () => {
     })
   }, [])
   return (
-    <div className='app__skills' id='Skills'>
+    <div className='app__skills ' id='Skills'>
         <motion.div
             whileInView={{x:[-100,0],opacity:[0,1]}}
             transition={{duration: 0.8}}

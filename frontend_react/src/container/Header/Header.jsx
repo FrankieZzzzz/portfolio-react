@@ -18,8 +18,9 @@ const Header = () => {
     , [controls]);
 
   return (
-    <section className='app__headerBox' id='About'>
+    <section className='app__headerBox ' id='About'>
       <div className='app__header app__flex' id='home'>
+        <div className='empty_box' />
         {/* left side icon */}
         <motion.div
           whileInView={{x:[-50,0],opacity:[0.5,1]}}
