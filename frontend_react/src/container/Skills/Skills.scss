@@ -1,3 +1,6 @@
+
+
+
 .app__Skills-container{
     width: 80%;
     margin-top: 3rem;
@@ -5,9 +8,10 @@
     display: flex;
     flex-direction: row;
 
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 768px){
         width: 100%;
         flex-direction: column;
+        align-items: center;
         
     }
 }
@@ -30,23 +34,18 @@
     flex-direction: column;
     text-align: center;
     margin: 1rem;
-    transition: all 300ms ease-in-out;
-
     div{
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         background-color: #fff;
         img{
             width: 50%;
-            height: 50%;
+            // height: 50%;
         }
-        &:hover{
-            box-shadow: 0 0 25px rgba(254, 244, 245, 0.14);
-        }
-        @media screen and (min-width: 2000px) {
-            width: 150px;
-            height: 150px;
+        @media screen and (min-width: 1200px) {
+            width: 100px;
+            height: 100px;
         }
         @media screen and (max-width: 1200px) {
             width: 70px;

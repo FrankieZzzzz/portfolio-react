@@ -53,7 +53,7 @@ const Skills = () => {
                     <div className='app__flex' style={{ backgroundColor: skills.bgColor}}>
                         <img src={urlFor(skills.icon)} alt={skills.name}/>
                     </div>
-                    <p className='p-text'>{skills.name}</p>
+                    {/* <p className='p-text'>{skills.name}</p> */}
                 </motion.div>
                 ))}
             </motion.div>

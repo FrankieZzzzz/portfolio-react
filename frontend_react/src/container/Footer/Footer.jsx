@@ -125,9 +125,9 @@ const Footer = () => {
               </li>
             </ul>
         </motion.div>
-        <motion.div>
+        {/* <motion.div>
           <p>Loosely designed in Figma and coded in Visual Studio Code. Open sourced on <a href='https://github.com/FrankieZzzzz' target='_black' rel='referrence'>GitHub</a> and deployed with Netlify</p>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </div>
   )

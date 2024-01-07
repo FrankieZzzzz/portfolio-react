@@ -4,15 +4,15 @@
 .app__footer{
     width: 100%;
     flex-direction: column;
-    padding: 0rem 1rem 0em;
+    padding: 0rem 0.3rem 0em;
     background: var(--deepBlue-color);
 
     @media screen and (min-width: 1200px) {
-        padding: 0rem 10rem 0em;
+        padding: 5rem 8rem 0em;
     }
 
     @media screen and (min-width: 2000px) {
-        padding: 0rem 18rem 0em;
+        padding: 3rem 18rem 0em;
     }
 // 标题
     .app_project-info {
