@@ -20,7 +20,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 2rem 0rem 3rem;
+        padding: 0rem 0rem 3rem;
         
         .project-title {
             .header-title {
@@ -31,7 +31,6 @@
                 align-items: center;
                 color: var(--lightBlue-color);
 
-                margin-top: 2rem;
 
                 span {
                     font-size: 20px;
@@ -133,8 +132,7 @@
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background: linear-gradient(90.21deg, rgb(170, 54, 124) -5.91%, rgb(74, 47, 189) 111.58%);
-        color: white;
+        background: var(--gradient-color);
         margin: 0rem 0.4rem;
         font-family: var(--content-font);
         font-weight: 800;
@@ -143,6 +141,7 @@
             height: 50%;
             color: var(--white-color);
             z-index: 20;
+            
         }
     }
     }
@@ -156,7 +155,7 @@
     align-items: center;
 
     .app__projects-item{
-        width: 380px;
+        width: 400px;
         flex-direction: column;
 
         margin: 0.5rem;
@@ -181,7 +180,7 @@
 }
 .app__projects-img{
     width: 100%;
-    height: 250px;
+    height: 280px;
     position: relative;
 
     img{

@@ -1,13 +1,16 @@
 .app__headerBox{
     height: max-content;
     background: var(--deepBlue-color);
+    @media screen and (max-width: 1200px) {
+            padding: 0rem 0rem 5em;
+        }
 }
-#home{
-    position: relative;
-    .app__wrapper{
-        padding: 0;
-    }
-}
+// #home{
+//     position: relative;
+//     .app__wrapper{
+//         padding: 0;
+//     }
+// }
 .app__header{
     flex: 1;
     width: 100%;
@@ -70,7 +73,9 @@
         display: none;
     }
 }
-
+.app__header-title{
+    padding-bottom: 5rem;
+}
 .app__header-title,
 .app_header-mobileText{
     // border: 1px solid red;
@@ -168,8 +173,11 @@
     }
 }
 .app_header-Deco{
-    display: flex;
-    padding: 10rem 0rem 0em 0rem;
+    width: 120px;
+    height: 120px;
+    margin: 0px auto;
+   
+    margin: 10rem 0rem 6rem;
     @media screen and (min-width: 780px) {
         padding: 2rem 0rem 0rem;
     }
@@ -177,9 +185,8 @@
         display: none;
     }
     img{
-        max-width: 65%;
+        width: 100%;
         object-fit: contain;
-        margin: 0px auto;
         @media screen and (min-width: 780px) {
             display: none;
         }
@@ -191,6 +198,7 @@
     height: 60vh;
     flex-direction: row;
     padding: 0rem 1rem 0em;
+    margin-bottom: 3rem;
     background: var(--deepBlue-color);
 
     .app_header-mobileText{
@@ -215,6 +223,8 @@
         }
         
         .header-content{
+            border: 1px solid red;
+            height: max-content;
             padding: 2rem 0rem 0rem 1.8rem;
             p{
                 margin-top: 0rem;

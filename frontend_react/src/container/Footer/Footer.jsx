@@ -49,7 +49,7 @@ const Footer = () => {
         <div className='project-title'>
           <div className='header-title '>
               <FontAwesomeIcon icon={faArrowRight} />
-              <span className='p-text'>What's Nest?</span>
+              <span className='p-text'>What's Next?</span>
           </div>
         </div>
       </motion.div>
