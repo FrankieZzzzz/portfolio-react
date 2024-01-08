@@ -55,13 +55,13 @@ const Project = () => {
 
     if (isMobile){
         return (
-            <div className='app__projects ' id='Project'>
+            <div className='app__projects' id='Project'>
                 <motion.div
                     whileInView={{x:[-100,0],opacity:[0,1]}}
                     transition={{duration: 0.8}}
                     className='app_project-info'
                 >
-                    <div className='project-title'>
+                    <div className='app_project-title'>
                     <div className='header-title app_flex'>
                         <FontAwesomeIcon icon={faArrowRight} />
                         <span className='p-text'>Something I've Built</span>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d815576.css",
-    "main.js": "/static/js/main.efa87e40.js",
+    "main.css": "/static/css/main.e964df1f.css",
+    "main.js": "/static/js/main.5db2fa74.js",
     "static/js/726.64e9befd.chunk.js": "/static/js/726.64e9befd.chunk.js",
     "static/media/poster-design.jpg": "/static/media/poster-design.076bcea3e05f2257affd.jpg",
     "static/media/Ux-case-study.jpg": "/static/media/Ux-case-study.9626130f53309824f44c.jpg",
@@ -13,12 +13,12 @@
     "static/media/weather-app.png": "/static/media/weather-app.0eb9abc402a679212f1e.png",
     "static/media/world-clock.png": "/static/media/world-clock.725da7f669fd838ff896.png",
     "index.html": "/index.html",
-    "main.9d815576.css.map": "/static/css/main.9d815576.css.map",
-    "main.efa87e40.js.map": "/static/js/main.efa87e40.js.map",
+    "main.e964df1f.css.map": "/static/css/main.e964df1f.css.map",
+    "main.5db2fa74.js.map": "/static/js/main.5db2fa74.js.map",
     "726.64e9befd.chunk.js.map": "/static/js/726.64e9befd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d815576.css",
-    "static/js/main.efa87e40.js"
+    "static/css/main.e964df1f.css",
+    "static/js/main.5db2fa74.js"
   ]
 }

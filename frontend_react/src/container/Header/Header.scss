@@ -1,25 +1,21 @@
+.About{
+    width: 100%;
+    height: 72px;
+}
 .app__headerBox{
     height: max-content;
     background: var(--deepBlue-color);
-    @media screen and (max-width: 1200px) {
-            padding: 0rem 0rem 5em;
-        }
-   
+    @media screen and (min-width: 768px) {
+        display: flex;
+        height: max-content;
+    }
 }
-// #home{
-//     position: relative;
-//     .app__wrapper{
-//         padding: 0;
-//     }
-// }
 
 .app__header{
     flex: 1;
     width: 100%;
     flex-direction: row;
     padding: 3rem 0rem 0em;
-
-    
     @media screen and (max-width: 768px) {
         flex-direction: column;
     }
@@ -33,7 +29,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         height: max-content;
 
         @media screen and (max-width:1200px) {
@@ -78,17 +74,18 @@
 // .app__header-title{
 //     padding-bottom: 5rem;
 // }
-.app__header-title,
+.app_project-title,
 .app_header-mobileText{
     // border: 1px solid red;
     width: 100%;
+    height: max-content;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 
     .header-title{
-        padding: 1rem 1rem 0rem;
+        padding: 1rem 0rem 0rem;
         font-family: 'Courier Prime', monospace;
         font-size: 1rem;
         display: flex;
@@ -97,13 +94,14 @@
 
         svg{
             color: var(--lightBlue-color);
+            font-size: 0.8rem;
         }
         span{
-            font-size: 20px;
+            // font-size: 20px;
             padding-left: 1rem;
         }
         @media screen and (min-width: 1200px) {
-            padding: 2rem 0rem 8rem;
+            padding: 0rem 0rem 8rem;
         }
     }
     .header-content{
@@ -142,7 +140,7 @@
         }
         p{
             display: none;
-            @media screen and (min-width:780px) {
+            @media screen and (min-width:768px) {
                 margin-top: 2rem;
                 width: 90%;
                 font-size: 1.2rem;
@@ -171,9 +169,6 @@
             margin: 0px auto;
             object-fit: contain;
         }
-        @media screen and (min-width: 1200px) {
-            max-width: 75%;
-        }
         @media screen and (min-width: 2000px) {
             max-width: 65%;
         }
@@ -185,7 +180,7 @@
     margin: 0px auto;
    
     margin: 10rem 0rem 6rem;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         padding: 2rem 0rem 0rem;
     }
     @media screen and (min-width: 1200px) {
@@ -202,29 +197,19 @@
 #app__header-mobile{
     flex: 1;
     width: 100%;
-    height: 60vh;
     flex-direction: row;
-    padding: 0rem 1rem 0em;
-    margin-bottom: 3rem;
     background: var(--deepBlue-color);
 
     .app_header-mobileText{
         justify-content: center;
-
-        .header-title{
-            padding: 0rem 0rem 0rem;
-        }
        .app_mobileText-img{
-            display: block;
-            position: relative;
             padding: 5rem 0rem 0rem 1.5rem;
             max-width: 50%;
             img {
-                max-width: 100%;
-                display: block;
+                max-width: 80%;
                 object-fit: contain;
                 @media screen and (min-width: 650px) {
-                    max-width: 75%;
+                    max-width: 65%;
                 }
             }
         }
@@ -243,7 +228,7 @@
             }
         }
     }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
