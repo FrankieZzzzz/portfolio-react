@@ -1,24 +1,33 @@
 import React, { useEffect } from 'react'
 import './Header.scss';
 
+import {useTypewriter} from 'react-simple-typewriter'
 import {motion, useAnimation} from 'framer-motion';
 import {images} from '../../constants';
 
+// icon set
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faArrowRight, faEnvelope, faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
+
 import {AppWrap} from '../../wrapper';
 
 // import {MotionWrap} from '../../wrapper'
 
 const Header = () => {
+  const [typeEffect] = useTypewriter({
+    words: ['the web', 'graphic design', 'user experience', 'my passion', 'human'], 
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 40
+  })
   const controls = useAnimation();
   useEffect(() => {
     controls.start({x: 0, opacity:1});}
     , [controls]);
 
   return (
-    <section className='app__headerBox ' >
+    <section className='app__headerBox' >
       <div id='About' />
       <div className='app__header app__flex' id='home'>
         {/* left side icon */}
@@ -70,7 +79,7 @@ const Header = () => {
             </div>
             <div className='header-content app__flex'>
               <h1 className='p-text'>Frankie Zhong</h1>
-              <h2 className='p-text ' >I build things for the web</h2>
+              <h2 className='p-text ' >I build things for {typeEffect}</h2>
               <p>Hello! My name is Frankie and I'm a dedicated UX Designer and Front-End Developer with a profound passion for the design industry. I've built a strong foundation in aesthetics and design through my Art Design degree. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a proactive problem-solver. Let's collaborate and bring innovative ideas to life!</p>
             </div>
           </div>

@@ -33,14 +33,14 @@ const ContainerPack = () => {
             y: mousePosition.y +36,
             backgroundColor: '#ffffff',
             // backgroundColor: 'transparent',
-            boxShadow: "80px 80px 150px 150px #0d192e45",
+            boxShadow: "80px 80px 150px 150px #0d192e65",
             borderRadius: '50%',
             mixBlendMode: "screen",
 
         },
         text:{
-            height: 58,
-            width: 58,
+            height: 48,
+            width: 48,
             x: mousePosition.x -24,
             y: mousePosition.y -24,
             backgroundColor: 'none',

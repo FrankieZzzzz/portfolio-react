@@ -89,7 +89,7 @@ const Footer = () => {
         className='app__footer-bottomBox'
       >
         <button>
-            <FontAwesomeIcon icon={faArrowUp} />
+           <a href='#About'><FontAwesomeIcon icon={faArrowUp} /></a>
         </button>
 
         <motion.div
