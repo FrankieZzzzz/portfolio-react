@@ -28,6 +28,7 @@ const Project = () => {
     
   }, [])
 
+//   click for different section
   const handleWorkFilter = (item) => {
 
     setactiveFilter(item);
