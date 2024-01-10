@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import './Header.scss';
+import '../Project/Project.scss'
+
 
 import {useTypewriter} from 'react-simple-typewriter'
 import {motion, useAnimation} from 'framer-motion';
@@ -118,7 +120,7 @@ const Header = () => {
         <motion.div
           whileInView={{x:[-100,0],opacity:[0,1]}}
           transition={{duration: 0.8}}
-          className='app_header-mobileText'
+          className='app_header-mobileText app_project-info'
         >
           <div className='header-title app_flex'>
             <FontAwesomeIcon icon={faArrowRight} />

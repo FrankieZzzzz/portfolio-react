@@ -2,13 +2,14 @@
 .app__projects{
     padding: 2rem 0rem 0em;
     @media screen and (min-width: 1200px) {
-        padding: 5rem 10rem 0em;
+        padding: 5rem 6rem 0em;
     }
 
     @media screen and (min-width: 2000px) {
-        padding: 3rem 18rem 0em;
+        padding: 3rem 12rem 0em;
     }
 }
+
 .app__header,
 .app__projects,
 .app__skills,
@@ -114,8 +115,6 @@
             border-image-slice: 1;
             filter: blur(10px);
     }
-    // flex-direction: column;
-    // align-items: flex-start;
     align-items: center;
     justify-content: space-between;
       
@@ -131,25 +130,25 @@
         }
     }
     .app__project-iconBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    .app__project-icon{
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: var(--gradient-color);
-        margin: 0rem 0.4rem;
-        font-family: var(--content-font);
-        font-weight: 800;
-        svg{
-            width: 50%;
-            height: 50%;
-            color: var(--white-color);
-            z-index: 20;
-            
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .app__project-icon{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #0d192ebd;
+            margin: 0rem 0.4rem;
+            font-family: var(--content-font);
+            font-weight: 800;
+            svg{
+                width: 50%;
+                height: 50%;
+                color: var(--white-color);
+                z-index: 20;
+                
+            }
         }
-    }
     }
     
 }

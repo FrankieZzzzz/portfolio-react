@@ -6,7 +6,13 @@ export default{
         {
             name:'name',
             title:'Name',
-            type:'string'
+            type:'string',
+            
+        },
+        {    name:'company',
+            title:'Company',
+            type:'string',
+
         },
         {
             name:'bgColor',
@@ -22,5 +28,14 @@ export default{
             },
         },
         
+    ],
+    orderings: [
+        {
+        title: 'Sort by company',
+        name: 'company',
+        by: [
+            {field: 'company', direction: 'desc'}
+        ]
+        }
     ]
 }

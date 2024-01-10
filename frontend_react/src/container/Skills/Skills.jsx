@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import './Skills.scss';
 import '../Project/Project.scss'
 
@@ -11,15 +11,15 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
   const [experiences, setExperience] = useState([])
-  const [skills, setSkills] = useState([])
-
+  const [skills, setSkills] = useState([])  
+    console.log('experiences:', experiences);
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const skillQuery = '*[_type == "skills"]';
+    const query = '*[_type == "experiences"] | order(year desc)';
+    const skillQuery = '*[_type == "skills"] | order(company desc)';
     
     client.fetch(query)
     .then((data)=> {
-        console.log(data);
+        // console.log(data);
         setExperience(data);
     })
     client.fetch(skillQuery)
@@ -37,12 +37,13 @@ const Skills = () => {
             <div className='app_project-title'>
                 <div className='header-title app_flex'>
                     <FontAwesomeIcon icon={faArrowRight} />
-                    <span className='p-text'>My Skill Set</span>
+                    <span className='p-text'>Skills and work experience</span>
                 </div>
             </div>
         </motion.div>
-        <div className='app__Skills-container'>
-            <motion.div className='app__Skills-list'>
+        <div className='app__skills-container'>
+            {/* icon list */}
+            <motion.div className='app__skills-list'>
                 {skills.map((skills) => (
                 <motion.div
                     whileInView={{opacity: [0,1]}}
@@ -53,10 +54,10 @@ const Skills = () => {
                     <div className='app__flex' style={{ backgroundColor: skills.bgColor}}>
                         <img src={urlFor(skills.icon)} alt={skills.name}/>
                     </div>
-                    {/* <p className='p-text'>{skills.name}</p> */}
                 </motion.div>
                 ))}
             </motion.div>
+            {/* experience list */}
             <motion.div className='app__skills-exp'>
                 {experiences.map((experiences) => (
                     <motion.div
@@ -77,17 +78,22 @@ const Skills = () => {
                                         data-for={work.name}
                                         key={work.name}
                                     >
-                                        <h4 className='bold-text'>{work.name}</h4>
-                                        <p className='p-text'>{work.company}</p>
+                                        <div className='app__skills-exp-title'>
+                                            <h4>{work.name}</h4>
+                                            <p className='p-text'>{work.company}</p>
+                                        </div>
+                                        <div className='app__skills-exp-text'>
+                                            <p className='p-text'>{work.desc}</p>
+                                        </div>
                                     </motion.div>
-                                    <ReactTooltip 
+                                    {/* <ReactTooltip 
                                         id={work.name}
                                         effect="solid"
                                         arrowColor='#fff'
                                         className='skills-tooltip'
                                     >
                                         {work.desc}
-                                    </ReactTooltip>
+                                    </ReactTooltip> */}
                                 </>
                             ))}
                         </motion.div>
