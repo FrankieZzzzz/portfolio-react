@@ -292,3 +292,24 @@
         top: -25px
     }
 }
+.app__project-loadMoreBtn{
+    margin: 2rem 0rem 0rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    color: var(--lightBlue-color);
+    transition: all 300ms ease-in-out;
+    left: 0px;
+    &:hover {
+        left: 10px;
+        background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    span {
+        padding: 0 0.5rem;
+    }
+}

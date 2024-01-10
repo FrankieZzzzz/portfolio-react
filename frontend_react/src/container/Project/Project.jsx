@@ -18,6 +18,10 @@ const Project = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([])
 
+  const [visibleItems, setVisibleItems] = useState(3)
+  const loadMoreItems = () => {
+        setVisibleItems( prevValue => prevValue + 3)
+  }
   useEffect(() => {
     const query = '*[_type == "works"]';
     client.fetch(query)
@@ -85,7 +89,7 @@ const Project = () => {
                     transition = {{duration: 0.5, delayChildren: 0.5}}
                     className='app__projects-portfolioMobile'
                 >
-                    {filterWork.map((work, index) => (
+                    {filterWork.slice(0, visibleItems).map((work, index) => (
                         <div className='app__projects-item app__flex' key={index}>
                             <div className='app__projects-img app__flex'>
                                 <img src={urlFor(work.imgUrl)} alt={work.name} />
@@ -93,7 +97,6 @@ const Project = () => {
                                     <div className='app__project-text'>
                                         <h4>{work.title}</h4>
                                     </div> 
-                                   
                                     <div className='app__project-iconBox'>
                                         <div className='app__flex'>
                                             {work.netlify &&(
@@ -123,10 +126,13 @@ const Project = () => {
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     ))}
                 </motion.div>
+                <div className='app__flex'>
+                    <button type='button' onClick={loadMoreItems} className='app__project-loadMoreBtn'>Load more<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                </div>
+
             </div>
         )
     }else{
@@ -161,7 +167,7 @@ const Project = () => {
                     transition = {{duration: 0.5, delayChildren: 0.5}}
                     className='app__projects-portfolio'
                 >
-                    {filterWork.map((work, index) => (
+                    {filterWork.slice(0, visibleItems).map((work, index) => (
                         <div className='app__projects-item app__flex' key={index}>
                             <div className='app__projects-img app__flex'>
                                 <img src={urlFor(work.imgUrl)} alt={work.name} />
@@ -219,6 +225,9 @@ const Project = () => {
                         </div>
                     ))}
                 </motion.div>
+                <div className='app__flex'>
+                    <button type='button' onClick={loadMoreItems} className='app__project-loadMoreBtn'>Load more<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                </div>
             </div>
         )
     }
