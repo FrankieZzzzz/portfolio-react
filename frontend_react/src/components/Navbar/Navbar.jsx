@@ -14,7 +14,7 @@ const Navbar = () => {
         <img src={images.Logo} alt="logo" />
       </div>
       <ul className='app__navbar-links'>
-        {['About','Project','Skills','Footer'].map((item) => (
+        {['About','Project','Skills','Contact'].map((item) => (
           <li key={`link-${item}`} className='app__flex p-text'>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -31,7 +31,7 @@ const Navbar = () => {
               transition={{duration: 0.55, ease:'easeOut'}}>
             <FontAwesomeIcon icon={faXmark} onClick={() => setToggle(false)} />
             <ul>
-              {['About','Project','Skills','Footer'].map((item) => (
+              {['About','Project','Skills','Contact'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                 </li>

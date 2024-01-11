@@ -8,4 +8,7 @@
     z-index: 10000;
     pointer-events: none;
     color: #0d192e65;
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
 }

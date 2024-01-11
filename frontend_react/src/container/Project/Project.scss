@@ -9,7 +9,7 @@
         padding: 3rem 12rem 0em;
     }
 }
-
+.app__statement,
 .app__header,
 .app__projects,
 .app__skills,
@@ -292,7 +292,8 @@
         top: -25px
     }
 }
-.app__project-loadMoreBtn{
+.app__project-loadMoreBtn,
+.app__skills-loadMoreBtn{
     margin: 2rem 0rem 0rem;
     background: none;
     border: none;

@@ -17,6 +17,7 @@ import {AppWrap} from '../../wrapper';
 // import {MotionWrap} from '../../wrapper'
 
 const Header = () => {
+  // typewriter effect
   const [typeEffect] = useTypewriter({
     words: ['the web', 'graphic design', 'user experience', 'my passion', 'human'], 
     loop: {},

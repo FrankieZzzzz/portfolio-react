@@ -39,7 +39,7 @@ const Footer = () => {
   }
 
   return (
-    <div className='app__footer '>
+    <div className='app__footer ' id='Contact'>
       {/* title */}
       <motion.div
         whileInView={{x:[-100,0],opacity:[0,1]}}
@@ -88,9 +88,7 @@ const Footer = () => {
         transition={{duration: 0.4}}
         className='app__footer-bottomBox'
       >
-        <button>
-           <a href='#About'><FontAwesomeIcon icon={faArrowUp} /></a>
-        </button>
+        <a href='#About' className='app__footer-backToTop'><button><FontAwesomeIcon icon={faArrowUp} /></button></a>
 
         <motion.div
           whileInView={{x:[-50,0],opacity:[0.5,1]}}

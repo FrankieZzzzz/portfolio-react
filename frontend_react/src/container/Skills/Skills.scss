@@ -221,3 +221,10 @@
         line-height: 2 !important;
     }
 }
+.app__skills-loadMoreBtn{
+    right: 10px;
+    font-family: var(--mini-font);
+    &:hover {
+        left: 20px;
+    }
+}

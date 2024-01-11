@@ -49,6 +49,8 @@ const ContainerPack = () => {
         }
     }
 
+
+
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default")
   return (

@@ -112,11 +112,14 @@
             }
         }
         h2{
+            height: 180px;
             font-size: 3.8rem;
             font-weight: 200;
             color: var(--lightBlue-color);
             line-height: 110%;
             padding-top: 1.5rem;
+
+            
             @media screen and (max-width: 1200px) {
                     font-size: 50px;
                 }

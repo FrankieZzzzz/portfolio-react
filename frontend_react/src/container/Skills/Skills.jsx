@@ -86,21 +86,19 @@ const Skills = () => {
                                             <p className='p-text'>{work.desc}</p>
                                         </div>
                                     </motion.div>
-                                    {/* <ReactTooltip 
-                                        id={work.name}
-                                        effect="solid"
-                                        arrowColor='#fff'
-                                        className='skills-tooltip'
-                                    >
-                                        {work.desc}
-                                    </ReactTooltip> */}
+                                    
                                 </>
                             ))}
                         </motion.div>
+                        
                     </motion.div>
+                    
                 ))}
+                 <div className='app__flex-end'>
+                    <button type='button' className='app__skills-loadMoreBtn'>View Full Résumé<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                </div> 
             </motion.div>
-        </div>          
+        </div> 
     </div>
   )
 }

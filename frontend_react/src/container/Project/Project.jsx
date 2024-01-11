@@ -67,10 +67,10 @@ const Project = () => {
                     className='app_project-info'
                 >
                     <div className='app_project-title'>
-                    <div className='header-title app_flex'>
-                        <FontAwesomeIcon icon={faArrowRight} />
-                        <span className='p-text'>Something I've Built</span>
-                    </div>
+                        <div className='header-title app_flex'>
+                            <FontAwesomeIcon icon={faArrowRight} />
+                            <span className='p-text'>Something I've Built</span>
+                        </div>
                     </div>
                 </motion.div>
                 <div className="app__projects-filter">
