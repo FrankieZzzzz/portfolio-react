@@ -12,7 +12,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Skills = () => {
   const [experiences, setExperience] = useState([])
   const [skills, setSkills] = useState([])  
-    console.log('experiences:', experiences);
   useEffect(() => {
     const query = '*[_type == "experiences"] | order(year desc)';
     const skillQuery = '*[_type == "skills"] | order(company desc)';
@@ -95,7 +94,7 @@ const Skills = () => {
                     
                 ))}
                  <div className='app__flex-end'>
-                    <button type='button' className='app__skills-loadMoreBtn'>View Full Résumé<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                    <button type='button' className='app__skills-resume'>View Full Résumé<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
                 </div> 
             </motion.div>
         </div> 

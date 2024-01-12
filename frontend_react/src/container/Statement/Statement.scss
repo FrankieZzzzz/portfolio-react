@@ -8,12 +8,14 @@
     @media screen and (min-width: 2000px) {
         padding: 3rem 12rem 0em;
     }
-    p{
+
+    .app__statment-content {
+        margin: 4rem 0rem 4rem;
         font-size: 4rem;
         color: var(--lightBlue-color);
         font-weight: 400;
         line-height: 1.5;
-
     }
+    
 
 }

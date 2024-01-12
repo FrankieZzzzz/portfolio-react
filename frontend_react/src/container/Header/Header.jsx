@@ -82,7 +82,7 @@ const Header = () => {
             </div>
             <div className='header-content app__flex'>
               <h1 className='p-text'>Frankie Zhong</h1>
-              <h2 className='p-text ' >I build things for {typeEffect}</h2>
+              <h2 className='p-text ' >I build things for <span>{typeEffect}</span></h2>
               <p>Hello! My name is Frankie and I'm a dedicated UX Designer and Front-End Developer with a profound passion for the design industry. I've built a strong foundation in aesthetics and design through my Art Design degree. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a proactive problem-solver. Let's collaborate and bring innovative ideas to life!</p>
             </div>
           </div>

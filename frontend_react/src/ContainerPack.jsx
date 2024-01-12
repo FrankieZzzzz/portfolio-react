@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import  {motion} from 'framer-motion';
 
-import {Footer, Header, Experience, Project, Skills} from './container'
+import {Footer, Header, Statement, Project, Skills} from './container'
 import { Navbar } from './components';
 import './ContainerPack.scss';
 
@@ -64,7 +64,7 @@ const ContainerPack = () => {
         <Header />
         <Project />
         <Skills />
-        <Experience />
+        <Statement />
         <Footer />
         <motion.div className='footer_text' onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <p>Loosely designed in Figma and coded in Visual Studio Code. Open sourced on <a href='https://github.com/FrankieZzzzz' target='_black' rel='referrence'>GitHub</a> and deployed with Netlify</p>

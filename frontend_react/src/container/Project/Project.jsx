@@ -31,7 +31,6 @@ const Project = () => {
     })
     
   }, [])
-
 //   click for different section
   const handleWorkFilter = (item) => {
 
@@ -132,7 +131,6 @@ const Project = () => {
                 <div className='app__flex'>
                     <button type='button' onClick={loadMoreItems} className='app__project-loadMoreBtn'>Load more<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
                 </div>
-
             </div>
         )
     }else{
@@ -231,7 +229,6 @@ const Project = () => {
             </div>
         )
     }
- 
 }
 export default AppWrap(Project, 'Project')
 
