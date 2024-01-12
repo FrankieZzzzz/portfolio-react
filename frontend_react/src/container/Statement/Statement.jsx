@@ -21,12 +21,12 @@ const Statement = () => {
       scrollTrigger:{
         trigger: splitTypes,
         start: 'top 90%',
-        end: 'top 40%',
+        end: 'top 10%',
         scrub: true,
         markers: false
       },
       opacity: 0.2,
-      stagger: 0.1
+      stagger: 0.05
     }
   )}, [])
 
