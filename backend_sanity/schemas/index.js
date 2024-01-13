@@ -7,4 +7,5 @@ import skills from'./skills';
 import workExperience from'./workExperience';
 import experiences from'./experiences';
 import contact from'./contact';
-export const schemaTypes = [abouts, works, skills, workExperience, experiences, contact];
+import resume from'./resume';
+export const schemaTypes = [abouts, works, skills, workExperience, experiences, resume,contact];

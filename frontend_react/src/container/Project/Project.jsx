@@ -18,12 +18,15 @@ const Project = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([])
 
-  const [visibleItems, setVisibleItems] = useState(3)
+  const [visibleItems, setVisibleItems] = useState(4)
   const loadMoreItems = () => {
-        setVisibleItems( prevValue => prevValue + 3)
+        setVisibleItems( prevValue => prevValue + 4)
+  }
+  const loadMLessItems = () => {
+        setVisibleItems( prevValue => prevValue - 4)
   }
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query = '*[_type == "works"] | order(label asc )';
     client.fetch(query)
     .then((data)=> {
         setWorks(data);
@@ -73,7 +76,7 @@ const Project = () => {
                     </div>
                 </motion.div>
                 <div className="app__projects-filter">
-                    {['All','UI/UX', 'Web APP', 'Graphic Design'].map((item, index) => (
+                    {['All', 'Web APP', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
                         <div
                             key={index}
                             onClick={() => handleWorkFilter(item)}
@@ -128,9 +131,15 @@ const Project = () => {
                         </div>
                     ))}
                 </motion.div>
-                <div className='app__flex'>
-                    <button type='button' onClick={loadMoreItems} className='app__project-loadMoreBtn'>Load more<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
-                </div>
+                {activeFilter === 'All' ? (
+                    <motion.div
+                        className='app__flex'
+                        whileInView={{x:[-50,0],opacity:[0,1]}}
+                        transition={{duration: 0.8, delay: 0.2}}
+                     >
+                        <button type='button' onClick={visibleItems<= 7 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 4 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                    </motion.div>
+                ) : null}
             </div>
         )
     }else{
@@ -150,7 +159,8 @@ const Project = () => {
                     </div>
                 </motion.div>
                 <div className="app__projects-filter">
-                    {['All','UI/UX', 'Web APP', 'Graphic Design'].map((item, index) => (
+                        {['All', 'Web APP', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
+
                         <div
                             key={index}
                             onClick={() => handleWorkFilter(item)}
@@ -168,7 +178,10 @@ const Project = () => {
                     {filterWork.slice(0, visibleItems).map((work, index) => (
                         <div className='app__projects-item app__flex' key={index}>
                             <div className='app__projects-img app__flex'>
-                                <img src={urlFor(work.imgUrl)} alt={work.name} />
+                                <img 
+                                    src={urlFor(work.imgUrl)} 
+                                    alt={work.name} 
+                                />
                                 <motion.div
                                 whileHover={{opacity: [0,1]}}
                                 transition={{ duration: 0.65, ease: 'easeInOut', staggerChildren: 0.5 }}
@@ -181,40 +194,23 @@ const Project = () => {
                                     <div className='app__project-iconBox'>
                                         {work.netlify &&(
                                             <a href={work.netlify} target='_blank' rel='noreferrer'>
-                                                <motion.div
-                                                whileInView={{scale: [0,1]}}
-                                                whileHover={{opacity: [1,0.8]}}
-                                                transition={{ duration: 0.25 }}
-                                                className='app__flex app__project-icon'
-                                                >
-
-                                                    
+                                                <div className='app__flex app__project-icon'>
                                                     <FontAwesomeIcon icon={faCircleNodes} />
-                                                </motion.div>
+                                                </div>
                                             </a>
                                         )}
                                         {work.projectLink && (
                                             <a href={work.projectLink} target='_blank' rel='noreferrer'>
-                                                <motion.div
-                                                whileInView={{scale: [0,1]}}
-                                                whileHover={{opacity: [1,0.8]}}
-                                                transition={{ duration: 0.25 }}
-                                                className='app__flex app__project-icon'
-                                                >
+                                                <div className='app__flex app__project-icon'>
                                                     <FontAwesomeIcon icon={faSquareBehance} />
-                                                </motion.div>
+                                                </div>
                                             </a>
                                         )}
                                         {work.codeLink && (
                                             <a href={work.codeLink} target='_blank' rel='noreferrer'>
-                                                <motion.div
-                                                whileInView={{scale: [0,1]}}
-                                                whileHover={{opacity: [1,0.8]}}
-                                                transition={{ duration: 0.25 }}
-                                                className='app__flex app__project-icon'
-                                                >
+                                                <div className='app__flex app__project-icon'>
                                                     <FontAwesomeIcon icon={faGithub} />
-                                                </motion.div>
+                                                </div>
                                             </a>
                                         )}
                                     </div>
@@ -223,9 +219,16 @@ const Project = () => {
                         </div>
                     ))}
                 </motion.div>
-                <div className='app__flex'>
-                    <button type='button' onClick={loadMoreItems} className='app__project-loadMoreBtn'>Load more<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
-                </div>
+                {activeFilter === 'All' ? (
+                    <motion.div
+                        className='app__flex'
+                        whileInView={{x:[-30,0],opacity:[0,1]}}
+                        transition={{duration: 0.8, delay: 0.2}}
+                     >
+                        <button type='button' onClick={visibleItems<= 7 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 4 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                    </motion.div>
+                ) : null}
+                
             </div>
         )
     }

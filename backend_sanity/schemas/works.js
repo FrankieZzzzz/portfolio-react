@@ -37,7 +37,6 @@ export default {
           hotspot: true,
         },
       },
-   
       {
         name: 'tags',
         title: 'Tags',
@@ -50,6 +49,20 @@ export default {
          }
        ]
       },
+      {
+        name: 'label',
+        title: 'Label',
+        type: 'string',
+      }
      
     ],
+    orderings: [
+        {
+        title: 'Sort by label',
+        name: 'label',
+        by: [
+            {field: 'label', direction: 'asc'}
+        ]
+        }
+    ]
   };

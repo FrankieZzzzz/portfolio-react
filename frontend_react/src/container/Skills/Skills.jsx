@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './Skills.scss';
 import '../Project/Project.scss'
 
-import { Tooltip as ReactTooltip } from 'react-tooltip'
 import  {motion} from 'framer-motion';
 import {AppWrap} from '../../wrapper';
 import { urlFor, client } from '../../client'
@@ -12,15 +11,22 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Skills = () => {
   const [experiences, setExperience] = useState([])
   const [skills, setSkills] = useState([])  
+  const [resume, setResume] = useState([])  
   useEffect(() => {
     const query = '*[_type == "experiences"] | order(year desc)';
     const skillQuery = '*[_type == "skills"] | order(company desc)';
-    
+    // Exp
+    client.fetch(query)
+    .then((data)=> {
+        setExperience(data);
+    })
+    // Resume
     client.fetch(query)
     .then((data)=> {
         // console.log(data);
-        setExperience(data);
+        setResume(data);
     })
+    // skill
     client.fetch(skillQuery)
     .then((data)=> {
         setSkills(data);
@@ -46,7 +52,7 @@ const Skills = () => {
                 {skills.map((skills) => (
                 <motion.div
                     whileInView={{opacity: [0,1]}}
-                    transition={{duration: 0.5}}
+                    transition={{duration: 2, delayChildren:0.5}}
                     className='app__skills-item app__flex'
                     key={skills.name}
                 >
@@ -71,7 +77,7 @@ const Skills = () => {
                                 <>
                                     <motion.div
                                         whileInView={{opacity: [0,1]}}
-                                        transition={{duration: 0.5}}
+                                        transition={{duration: 0.8}}
                                         className='app__skills-exp-work'
                                         data-tip
                                         data-for={work.name}
@@ -89,13 +95,11 @@ const Skills = () => {
                                 </>
                             ))}
                         </motion.div>
-                        
                     </motion.div>
-                    
                 ))}
-                 <div className='app__flex-end'>
-                    <button type='button' className='app__skills-resume'>View Full Résumé<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
-                </div> 
+                 {/* <div className='app__flex-end'>
+                    <button type='button' className='app__skills-resume'><a href={resume}  target='_blank' rel='noreferrer'>View Full Résumé<span><FontAwesomeIcon icon={faArrowRight} /></span></a></button>
+                </div>  */}
             </motion.div>
         </div> 
     </div>
@@ -103,3 +107,4 @@ const Skills = () => {
 }
 
 export default AppWrap(Skills, 'Skills')
+ 
