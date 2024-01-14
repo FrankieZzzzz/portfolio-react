@@ -1,9 +1,5 @@
 // 最外侧box
-.app__wrapper{
-    @media screen and (max-width: 768px) {
-            min-height: max-content;
-        }
-}
+
 .app__projects{
     padding: 2rem 0rem 0em;
     @media screen and (min-width: 1200px) {
@@ -77,7 +73,7 @@
         transition: all 300ms ease;
         margin: 0.2rem 0.4rem;
         font-size: 0.7rem;
-        z-index: 2000;
+        z-index: 1000;
         &:hover {
             background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
             color: #fff;
@@ -220,7 +216,10 @@
     opacity: 0;
     transition: all 300ms ease;
 
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     &::before {
         content: "";
@@ -245,7 +244,7 @@
         text-align: center;
         h4 {
             padding: 0rem 1rem;
-            font-size: 30px;
+            font-size: 1.2rem;
             font-weight: 700;
             letter-spacing: 0.8px;
             line-height: 1.1em;
@@ -253,7 +252,7 @@
     
         span {
             font-weight: 400;
-            font-size: 15px;
+            font-size: 0.875;
             letter-spacing: 0.8px;
         }
     }
@@ -311,12 +310,22 @@
     color: var(--lightBlue-color);
     transition: all 300ms ease-in-out;
     left: 0px;
-    &:hover {
-        left: 10px;
+
+
+    @media screen and (max-width: 768px) {
         background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+    }
+    @media screen and (min-width: 1200px) {
+        &:hover {
+            left: 10px;
+            background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
     }
     span {
         padding: 0 0.5rem;

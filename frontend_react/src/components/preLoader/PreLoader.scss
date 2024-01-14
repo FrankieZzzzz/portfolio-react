@@ -1,0 +1,36 @@
+.app__preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--deepBlue-color);
+    color: var(--lightBlue-color);
+    font-family: var(--content-font);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10010;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden !important;
+
+    .app__preloader-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 60px;
+        width: 280px;
+        font-size: 2rem;
+        font-weight: 600;
+        opacity: 0;
+        overflow: hidden;
+        color: var(--lightBlue-color);
+
+        span{
+            padding:0rem 0.5rem
+        }
+    }
+}

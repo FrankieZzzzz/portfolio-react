@@ -22,7 +22,6 @@ const Footer = () => {
   }
 
   const handleChangeSubmit = () => {
-    setLoading(true)
 
     const contact = {
       _type: 'contact',
@@ -30,13 +29,25 @@ const Footer = () => {
       email: email,
       message: message,
     }
+ 
+  if (contact.name || contact.email) {
+    setIsFormSubmitted(true)
+    setLoading(true);
 
     client.create(contact)
-     .then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true)
-     })
+      .then(() => {
+      setLoading(false);
+    })
+    .catch((error) => {
+      console.error('Error creating contact:', error);
+      setLoading(false);
+    });
+  }else{
+    setIsFormSubmitted(false);
+
   }
+}
+
 
   return (
     <div className='app__footer ' id='Contact'>
@@ -63,11 +74,11 @@ const Footer = () => {
         {!isFormSubmitted ? (
         <div className='app__footer-form '>
           <div className='input-box'>
-            <label for='name' autocomplete="on">Name</label>
+            <label for='name' autocomplete="on">Name *</label>
             <input className='p-text' type="text" name="name" value={name} onChange={handleChangeInput} id='name' required/>
           </div>
           <div className='input-box'>
-            <label for='email'>Email</label>
+            <label for='email'>Email *</label>
             <input className='p-text' type="email" name="email" value={email} onChange={handleChangeInput} id='email' required/>
           </div>
           <div className='input-box'>

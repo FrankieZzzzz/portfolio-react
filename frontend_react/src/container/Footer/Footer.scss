@@ -101,14 +101,22 @@
         font-family: var(--mini-font);
         left: 0px;
         transition: all 300ms ease-in-out;
-
-        &:hover {
-            left: 10px;
+        @media screen and (max-width: 768px) {
             background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
         }
+        @media screen and (min-width: 1200px) {
+            &:hover {
+                left: 10px;
+                background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+        
 
         span {
             padding: 0 0.5rem;
@@ -116,7 +124,7 @@
     }
 
     @media screen and (min-width: 768px) {
-    width: 50%;
+        width: 50%;
         flex-direction: column;
         align-items: center;
     }

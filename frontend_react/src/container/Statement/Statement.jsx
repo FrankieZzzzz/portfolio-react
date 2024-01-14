@@ -51,7 +51,7 @@ const Statement = () => {
   )}, )
 
   return(
-    <div className='app__statement'>
+    <div className='app__statement' id='Statement'>
       <div className='app_project-info'>
         <div className='header-title app_flex'>
             <FontAwesomeIcon icon={faArrowRight} />

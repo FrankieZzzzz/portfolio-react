@@ -185,7 +185,7 @@ const Project = () => {
                                 <motion.div
                                 whileHover={{opacity: [0,1]}}
                                 transition={{ duration: 0.65, ease: 'easeInOut', staggerChildren: 0.5 }}
-                                className='app__projects-hover app__flex'
+                                className='app__projects-hover '
                                 >       
                                     <div className='app__project-text'>
                                         <h4>{work.title}</h4>
