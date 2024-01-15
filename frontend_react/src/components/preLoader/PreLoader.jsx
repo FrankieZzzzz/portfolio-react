@@ -11,7 +11,7 @@ const PreLoader = () => {
     return (
         <div className="app__preloader">
             <div className="app__preloader-container">
-                <span>hellow</span>
+                <span>Hello</span>
                 <span>there</span>
                 <span>👋</span>
             </div>
