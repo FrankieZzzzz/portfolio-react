@@ -1,4 +1,4 @@
-# Toronto Weather App 🌦
+# Frankie Portfolio
 <p align="center">
  <img width="500" alt="My portfolio snapshot" src="frontend_react/src/assets/Portfolio.png">
 </p>
