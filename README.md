@@ -14,7 +14,7 @@ Welcome to Frankie Portfolio – my inaugural code portfolio web page. This show
 ## Try It Out 
 To see the page, visit [Frankie Portfolio](https://frankiezhong-portfolio.netlify.app/). 
 
-## Getting Started 🏁
+## Getting Started 
 1. Clone this repository: `git clone https://github.com/your-username/your-repo.git`
 2. Install the required dependencies: `npm install`
 3. Run the app locally: `npm start`
@@ -26,7 +26,7 @@ To see the page, visit [Frankie Portfolio](https://frankiezhong-portfolio.netlif
 | Light Blue      |![Light Blue](https://via.placeholder.com/15/BBDEFB/000000?text=+) #BBDEFB  |
 | Purple          |![Purple](https://via.placeholder.com/15/815cf0/000000?text=+) #815cf0  |
 | Grey            |![Grey](https://via.placeholder.com/15/C5C5C5/000000?text=+) #C5C5C5  |
-| Gradient color  | <div style="background: linear-gradient(90.21deg, rgb(170, 54, 124) -5.91%, rgb(74, 47, 189) 111.58%); width: 15px; height: 15px; border-radius: 4px;"></div> |
+| Gradient color  
 | white           |![Light Navy](https://via.placeholder.com/15/ffffff/000000?text=+) #ffffff  |
 
 Feel free to explore and contribute to this project. If you have any suggestions or find issues, please create a GitHub issue.
