@@ -26,7 +26,7 @@ To see the page, visit [Frankie Portfolio](https://frankiezhong-portfolio.netlif
 | Light Blue      |![Light Blue](https://via.placeholder.com/15/BBDEFB/000000?text=+) #BBDEFB  |
 | Purple          |![Purple](https://via.placeholder.com/15/815cf0/000000?text=+) #815cf0  |
 | Grey            |![Grey](https://via.placeholder.com/15/C5C5C5/000000?text=+) #C5C5C5  |
-| Gradient color  | ![Gradient Color](https://via.placeholder.com/15/AA367C/000000?text=+) ![Gradient Color](https://via.placeholder.com/15/4A2FBD/000000?text=+)|
+| Gradient color  | ![Gradient Color](https://via.placeholder.com/15/AA367C/000000?text=+) #AA367C ![Gradient Color](https://via.placeholder.com/15/4A2FBD/000000?text=+) #4A2FBD|
 | white           |![Light Navy](https://via.placeholder.com/15/ffffff/000000?text=+) #ffffff  |
 
 Feel free to explore and contribute to this project. If you have any suggestions or find issues, please create a GitHub issue.
