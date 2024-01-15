@@ -65,4 +65,4 @@ const Statement = () => {
     </div>
   )
 }
-export default AppWrap(Statement, 'Statement')
+export default Statement

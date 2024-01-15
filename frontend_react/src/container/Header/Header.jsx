@@ -117,6 +117,7 @@ const Header = () => {
           />
         </motion.div>
       </div>
+      {/* about part */}
       <div id='app__header-mobile' className='app__header'>
         <motion.div
           whileInView={{x:[-100,0],opacity:[0,1]}}

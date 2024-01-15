@@ -1,5 +1,5 @@
 .app__skills{
-    padding: 2rem 0.3rem 0em;
+    padding: 0rem 0.3rem 0em;
     
     @media screen and (min-width: 1200px) {
         padding: 5rem 6rem 0em;
@@ -14,7 +14,7 @@
 .app__skills-container{
     width: 100%;
     margin: 0px auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@
         width: 24%;
     }
     @media screen and (min-width: 2000px) {
-        width: 32%;
+        width: 35%;
     }
     
     @media screen and (max-width: 1200px) {
@@ -98,13 +98,13 @@
     margin: 0.6rem 0;
     background: rgba(217, 217, 217, 0.10);
     border-radius: 8px;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
 
     &:hover {
         background: rgba(217, 217, 217, 0.088);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;;
         border-radius: 6px;
-        padding: 1rem 2rem 1rem 2rem;
+        padding: 1.5rem 2rem 1.5rem 2rem;
     }
     @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -167,15 +167,13 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 0.5rem;
-                @media screen and (min-width: 768px) {
-                    flex-direction: column;
-                }
+                flex-direction: column;
                 h4 {
                     font-weight: 400;
-                    font-family: var(--mini-font);
+                    font-family:var(--content-font);
                     color: var(--mainPurple-color);
                     font-size: 1rem;
-
+                    margin-bottom: 0.2rem;
                     @media screen and (min-width: 1200px) {
                         font-size: 1.2rem;
                     }
@@ -192,7 +190,7 @@
             }
             .app__skills-exp-text{
                 p{
-                    font-weight: 200;
+                    font-weight: 300;
                     color: var(--lightBlue-color);
                     font-size: 0.8rem;
                 }

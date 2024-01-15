@@ -48,6 +48,7 @@ const Project = () => {
         }
     }, 500)
   }
+//   window size
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
     useEffect(() => {
         const handleResize = () => {
@@ -76,7 +77,7 @@ const Project = () => {
                     </div>
                 </motion.div>
                 <div className="app__projects-filter">
-                    {['All', 'Web APP', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
+                    {['All', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
                         <div
                             key={index}
                             onClick={() => handleWorkFilter(item)}
@@ -159,7 +160,7 @@ const Project = () => {
                     </div>
                 </motion.div>
                 <div className="app__projects-filter">
-                        {['All', 'Web APP', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
+                        {['All', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
 
                         <div
                             key={index}
@@ -225,7 +226,7 @@ const Project = () => {
                         whileInView={{x:[-30,0],opacity:[0,1]}}
                         transition={{duration: 0.8, delay: 0.2}}
                      >
-                        <button type='button' onClick={visibleItems<= 7 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 4 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                        <button type='button' onClick={visibleItems<= 8 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 8 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
                     </motion.div>
                 ) : null}
                 
