@@ -148,8 +148,31 @@
         padding: 0rem 1rem;
         max-width: 34%;
     }
+    
     img{
         display: none;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        filter: hue-rotate(15deg) saturate(0.2);
+
+        outline: none;
+        outline-offset: 0;
+        padding: 15px;
+
+        border-radius: 50%;
+
+        transition: all 350ms ease-in-out;
+        &:hover{
+            filter:  hue-rotate(0deg) saturate(1);
+            left: -15px;
+            top: -15px;
+            box-shadow: 0 0 45px rgba(0, 0, 0, 0.6), inset 0 0 0 5px #815cf0, inset 0 0 0 5px #AA367C;
+            // outline: 5px solid grey;
+            // outline-offset: 1px;
+            
+            // box-shadow: 0 0 45px rgba(0, 0, 0, 0.4);
+        }
         @media screen and (min-width: 1200px) {
             max-width: 100%;
             display: block;
@@ -157,7 +180,7 @@
             object-fit: contain;
         }
         @media screen and (min-width: 2000px) {
-            max-width: 65%;
+            max-width: 80%;
         }
     }
 }
@@ -165,7 +188,7 @@
     width: 100px;
     height: 100px;
     margin: 0px auto;
-    margin: 0rem 0rem 5rem;
+    margin: 5rem 0rem 5rem;
     
     @media screen and (min-width: 1200px) {
         display: none;

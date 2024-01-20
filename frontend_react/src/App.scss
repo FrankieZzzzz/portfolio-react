@@ -151,11 +151,14 @@
     align-items: center;
     flex-direction: column;
 
+    position: fixed;
+    right: 10px;
+    top: 50%;
     padding: 1rem 1.5rem 1rem;
 
     .app__navigation-dot {
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
         border-radius: 50%;
         background-color: #cbcbcb;
         margin: 0.5rem 0rem; 
