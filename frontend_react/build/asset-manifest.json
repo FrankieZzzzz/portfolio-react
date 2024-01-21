@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d1c1de55.css",
+    "main.js": "/static/js/main.1f0dd44b.js",
+    "static/js/726.64e9befd.chunk.js": "/static/js/726.64e9befd.chunk.js",
+    "static/media/poster-design.jpg": "/static/media/poster-design.076bcea3e05f2257affd.jpg",
+    "static/media/Ux-case-study.jpg": "/static/media/Ux-case-study.9626130f53309824f44c.jpg",
+    "static/media/mask.jpg": "/static/media/mask.f08a709026d0d44cdd8a.jpg",
+    "static/media/Travel-website.jpg": "/static/media/Travel-website.7c8cf6dccbe19e8fc0d4.jpg",
+    "static/media/brand-design.jpg": "/static/media/brand-design.d1400debeaf54a487062.jpg",
+    "static/media/magazine-design.jpg": "/static/media/magazine-design.249cd6c9706edb031031.jpg",
+    "static/media/Frankie.png": "/static/media/Frankie.e6d42fb41a9072094906.png",
+    "static/media/weather-app.png": "/static/media/weather-app.0eb9abc402a679212f1e.png",
+    "static/media/world-clock.png": "/static/media/world-clock.725da7f669fd838ff896.png",
+    "index.html": "/index.html",
+    "main.d1c1de55.css.map": "/static/css/main.d1c1de55.css.map",
+    "main.1f0dd44b.js.map": "/static/js/main.1f0dd44b.js.map",
+    "726.64e9befd.chunk.js.map": "/static/js/726.64e9befd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1c1de55.css",
+    "static/js/main.1f0dd44b.js"
+  ]
+}

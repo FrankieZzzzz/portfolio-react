@@ -183,6 +183,9 @@
             width: 100%;
             margin: 0.5rem;
         }
+        @media screen and (max-width:1800px) {
+            margin: 2.5rem;
+        }
     }
 }
 .app__projects-img{
