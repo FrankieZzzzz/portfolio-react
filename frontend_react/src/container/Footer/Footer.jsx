@@ -74,7 +74,7 @@ const Footer = () => {
         {!isFormSubmitted ? (
         <div className='app__footer-form '>
           <div className='input-box'>
-            <label for='name' autocomplete="on">Name *</label>
+            <label for='name' autoComplete="on">Name *</label>
             <input className='p-text' type="text" name="name" value={name} onChange={handleChangeInput} id='name' required/>
           </div>
           <div className='input-box'>
