@@ -32,7 +32,6 @@ const Project = () => {
         setWorks(data);
         setFilterWork(data);
     })
-    
   }, [])
 //   click for different section
   const handleWorkFilter = (item) => {
