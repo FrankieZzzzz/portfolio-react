@@ -1,6 +1,11 @@
 // 最外侧box
-
+.dark-model{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
 .app__projects{
+    position: relative;
     padding: 0rem 0rem 0em;
     @media screen and (min-width: 1200px) {
         padding: 5rem 6rem 0em;
@@ -333,4 +338,18 @@
     span {
         padding: 0 0.5rem;
     }
+}
+
+.modal-open{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.1);
+    z-index: 10000;
+    overflow-y: auto;
+}
+.modal-open body{
+    overflow: hidden;
 }

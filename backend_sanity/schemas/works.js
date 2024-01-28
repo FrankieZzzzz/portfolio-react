@@ -37,17 +37,67 @@ export default {
           hotspot: true,
         },
       },
+       {
+        name: 'imgUrl_description',
+        title: 'ImageUrl Description',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'imgUrl_1',
+        title: 'ImageUrl_1',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'imgUrl_2',
+        title: 'ImageUrl_2',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'imgUrl_3',
+        title: 'ImageUrl_3',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'imgUrl_4',
+        title: 'ImageUrl_4',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'imgUrl_5',
+        title: 'ImageUrl_5',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+     
+      
       {
         name: 'tags',
         title: 'Tags',
-       type:'array',
-       of: [
-         {
-           name:'tag',
-           title:'Tag',
-           type:'string'
-         }
-       ]
+        type:'array',
+        of: [
+          {
+            name:'tag',
+            title:'Tag',
+            type:'string'
+          }
+        ]
       },
       {
         name: 'label',

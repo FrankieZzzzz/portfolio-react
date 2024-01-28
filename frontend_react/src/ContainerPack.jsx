@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import  {motion} from 'framer-motion';
 
-import {Footer, Header, Statement, Project, Skills} from './container'
+import {Footer, Header, Statement, Project, Skills} from './container';
 import { Navbar } from './components';
 import './ContainerPack.scss';
 
 const ContainerPack = () => {
+    
 // get mouse position
     const [mousePosition, setMousePosition] = useState({
         x:0,

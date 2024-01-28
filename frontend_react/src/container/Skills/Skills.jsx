@@ -20,12 +20,6 @@ const Skills = () => {
     .then((data)=> {
         setExperience(data);
     })
-    // Resume
-    client.fetch(query)
-    .then((data)=> {
-        // console.log(data);
-        setResume(data);
-    })
     // skill
     client.fetch(skillQuery)
     .then((data)=> {

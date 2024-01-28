@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Navbar.scss'
 import { images } from '../../constants';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -7,7 +7,8 @@ import {motion} from 'framer-motion';
 
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
+  
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
