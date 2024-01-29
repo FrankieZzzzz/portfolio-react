@@ -142,17 +142,17 @@
         flex-direction: row;
         justify-content: center;
         .app__project-icon{
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
-            background: #0d192ebd;
-            margin: 0rem 0.4rem;
+            background: #0d192e59;
+            margin: 0rem 0.2rem;
             font-family: var(--content-font);
             font-weight: 800;
             cursor: pointer;
             svg{
-                width: 55%;
-                height: 55%;
+                width: 50%;
+                height: 50%;
                 color: var(--white-color);
                 z-index: 20;
                 

@@ -64,85 +64,88 @@ const Project = () => {
 
     if (isMobile){
         return (
-            <div className='app__projects' id='Project'>
-                <motion.div
-                    whileInView={{x:[-100,0],opacity:[0,1]}}
-                    transition={{duration: 0.8}}
-                    className='app_project-info'
-                >
-                    <div className='app_project-title'>
-                        <div className='header-title app_flex'>
-                            <FontAwesomeIcon icon={faArrowRight} />
-                            <span className='p-text'>Something I've Built</span>
+            <>
+                <div className='app__projects' id='Project'>
+                    <motion.div
+                        whileInView={{x:[-100,0],opacity:[0,1]}}
+                        transition={{duration: 0.8}}
+                        className='app_project-info'
+                    >
+                        <div className='app_project-title'>
+                            <div className='header-title app_flex'>
+                                <FontAwesomeIcon icon={faArrowRight} />
+                                <span className='p-text'>Something I've Built</span>
+                            </div>
                         </div>
+                    </motion.div>
+                    <div className="app__projects-filter">
+                        {['All', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
+                            <div
+                                key={index}
+                                onClick={() => handleWorkFilter(item)}
+                                className={`app__projects-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
+                            >
+                                {item}
+                            </div>
+                        ))}
                     </div>
-                </motion.div>
-                <div className="app__projects-filter">
-                    {['All', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
-                        <div
-                            key={index}
-                            onClick={() => handleWorkFilter(item)}
-                            className={`app__projects-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
-                        >
-                            {item}
-                        </div>
-                    ))}
-                </div>
-                <motion.div
-                    animate={animateCard}
-                    transition = {{duration: 0.5, delayChildren: 0.5}}
-                    className='app__projects-portfolioMobile'
-                >
-                    {filterWork.slice(0, visibleItems).map((work, index) => (
-                        <div className='app__projects-item app__flex' key={index}>
-                            <div className='app__projects-img app__flex'>
-                                <img src={urlFor(work.imgUrl)} alt={work.name} />
-                                <div className='app__projects-contentMobile'>
-                                    <div className='app__project-text'>
-                                        <h4>{work.title}</h4>
-                                    </div> 
-                                    <div className='app__project-iconBox'>
-                                        <div className='app__flex'>
-                                            {work.netlify &&(
-                                                <a href={work.netlify} target='_blank' rel='noreferrer'>
-                                                    <div className='app__flex app__project-icon'>
-                                                        <FontAwesomeIcon icon={faCircleNodes} />
-                                                    </div>
-                                                </a>
-                                            )}
-                                            
-                                            {work.projectLink && (
-                                                <a href={work.projectLink} target='_blank' rel='noreferrer'>
-                                                    <div className='app__flex app__project-icon'>
-                                                        <FontAwesomeIcon icon={faSquareBehance} />
-                                                    </div>
-                                                </a>
-                                            )}
-                                            
-                                            {work.codeLink && (
-                                                <a href={work.codeLink} target='_blank' rel='noreferrer'>
-                                                    <div className='app__flex app__project-icon'>
-                                                        <FontAwesomeIcon icon={faGithub} />
-                                                    </div>
-                                                </a>
-                                            )}
+                    <motion.div
+                        animate={animateCard}
+                        transition = {{duration: 0.5, delayChildren: 0.5}}
+                        className='app__projects-portfolioMobile'
+                    >
+                        {filterWork.slice(0, visibleItems).map((work, index) => (
+                            <div className='app__projects-item app__flex' key={index}>
+                                <div className='app__projects-img app__flex'>
+                                    <img src={urlFor(work.imgUrl)} alt={work.name} />
+                                    <div className='app__projects-contentMobile'>
+                                        <div className='app__project-text'>
+                                            <h4>{work.title}</h4>
+                                        </div> 
+                                        <div className='app__project-iconBox'>
+                                            <div className='app__flex'>
+                                                {work.netlify &&(
+                                                    <a href={work.netlify} target='_blank' rel='noreferrer'>
+                                                        <div className='app__flex app__project-icon'>
+                                                            <FontAwesomeIcon icon={faCircleNodes} />
+                                                        </div>
+                                                    </a>
+                                                )}
+                                                
+                                                {work.projectLink && (
+                                                    <a href={work.projectLink} target='_blank' rel='noreferrer'>
+                                                        <div className='app__flex app__project-icon'>
+                                                            <FontAwesomeIcon icon={faSquareBehance} />
+                                                        </div>
+                                                    </a>
+                                                )}
+                                                
+                                                {work.codeLink && (
+                                                    <a href={work.codeLink} target='_blank' rel='noreferrer'>
+                                                        <div className='app__flex app__project-icon'>
+                                                            <FontAwesomeIcon icon={faGithub} />
+                                                        </div>
+                                                    </a>
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
-                </motion.div>
-                {activeFilter === 'All' ? (
-                    <motion.div
-                        className='app__flex'
-                        whileInView={{x:[-50,0],opacity:[0,1]}}
-                        transition={{duration: 0.8, delay: 0.2}}
-                     >
-                        <button type='button' onClick={visibleItems<= 7 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 4 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                        ))}
                     </motion.div>
-                ) : null}
-            </div>
+                    {activeFilter === 'All' ? (
+                        <motion.div
+                            className='app__flex'
+                            whileInView={{x:[-50,0],opacity:[0,1]}}
+                            transition={{duration: 0.8, delay: 0.2}}
+                        >
+                            <button type='button' onClick={visibleItems<= 10 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 10 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                        </motion.div>
+                    ) : null}
+                </div>
+                <ProjectModel open={openModal} project={selectedWork} onClose={(() => setOpenModal(false))}/>
+            </>
         )
     }else{
         // when window size bigger than 1200px
