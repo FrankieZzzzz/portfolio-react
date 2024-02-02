@@ -30,7 +30,7 @@ const ProjectModel = ({open, onClose, project}) => {
         document.body.style.cursor = 'default';
     };
 
-    if (!open || !project){
+    if (!open || !project && urlFor(project.imgUrl_description) ===''){
         document.body.style.cursor = 'default';
     } else{
         return(
@@ -60,7 +60,6 @@ const ProjectModel = ({open, onClose, project}) => {
                                         </div>
                                     </a>
                                 )}
-                                
                                 {project.codeLink && (
                                     <a href={project.codeLink} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>

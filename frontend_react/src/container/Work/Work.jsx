@@ -157,4 +157,4 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'Work')
+export default Work

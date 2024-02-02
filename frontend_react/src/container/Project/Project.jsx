@@ -23,10 +23,10 @@ const Project = () => {
     const [visibleItems, setVisibleItems] = useState(6)
     const loadMoreItems = () => {
         setVisibleItems( prevValue => prevValue + 4)
-    }
+    };
     const loadMLessItems = () => {
         setVisibleItems( prevValue => prevValue - 4)
-    }
+    };
     useEffect(() => {
         const query = '*[_type == "works"] | order(label asc )';
         client.fetch(query)
@@ -34,7 +34,7 @@ const Project = () => {
             setWorks(data);
             setFilterWork(data);
         })
-    }, [])
+    }, []);
     //   click for different section
     const handleWorkFilter = (item) => {
 
@@ -48,7 +48,7 @@ const Project = () => {
                 setFilterWork(works.filter((work) => work.tags.includes(item)))
             }
         }, 500)
-    }
+    };
 //   window size
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
         useEffect(() => {
@@ -60,8 +60,18 @@ const Project = () => {
             return () => {
                 window.removeEventListener('resize', handleResize);
             };
-        }, [])
+        }, []);
 
+    const handleProjectItemClick = (work) => {
+        if(work.imgUrl_1 || work.imgUrl_2 || work.imgUrl_3 || work.imgUrl_4 || work.imgUrl_5){
+            setOpenModal(true);
+            setSelectedWork(work)
+        }else{
+            return(null)
+        }
+    };
+
+        
     if (isMobile){
         return (
             <>
@@ -184,7 +194,7 @@ const Project = () => {
                     >
                         {filterWork.slice(0, visibleItems).map((work, index) => (
                             <div className='app__projects-item app__flex' key={index}>
-                                <div className='app__projects-img app__flex' onClick={() => {setOpenModal(true); setSelectedWork(work)}} >
+                                <div className='app__projects-img app__flex' onClick={() => handleProjectItemClick(work)} >
                                     <img 
                                         src={urlFor(work.imgUrl)} 
                                         alt={work.name} 
@@ -213,10 +223,11 @@ const Project = () => {
                         </motion.div>
                     ) : null}
                 </div>
+                
                 <ProjectModel open={openModal} project={selectedWork} onClose={(() => setOpenModal(false))}/>
             </>
         )
     }
 }
-export default AppWrap(Project, 'Project')
+export default Project
 

@@ -100,5 +100,5 @@ const Skills = () => {
   )
 }
 
-export default AppWrap(Skills, 'Skills')
+export default Skills
  

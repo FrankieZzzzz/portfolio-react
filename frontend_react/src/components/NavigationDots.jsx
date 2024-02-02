@@ -22,7 +22,7 @@ const NavigationDots = ({active}) => {
   }else{
     return (
       <span className='app__navigation'>
-        {['Header','Project','Skills','Statement','Contact'].map((item,index) => (
+        {[].map((item,index) => (
           <a 
           href={`#${item}`}
           key={item + index}
