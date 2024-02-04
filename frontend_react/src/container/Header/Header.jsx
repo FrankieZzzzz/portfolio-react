@@ -141,7 +141,7 @@ const Header = () => {
               />
           </motion.div>
           <div className='header-content app__flex'>
-              <p>Hello! My name is Frankie and I'm a dedicated <span>UX Designer</span> and <span>Front-End Developer</span> with a profound passion for the design industry. I've built a strong foundation in aesthetics and design through my <span>Art Design degree</span>. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+            <p>Hello! My name is Frankie and I'm a dedicated <span>Web Developer</span> and <span>UX Designer</span> with a profound passion for the design industry. I've built a strong foundation in aesthetics and design through my <span>Art Design degree</span>. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
           </div>
         </motion.div>
       </div>
@@ -149,4 +149,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default AppWrap(Header, 'Header')
