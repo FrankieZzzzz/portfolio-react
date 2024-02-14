@@ -20,9 +20,11 @@
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
     "react-on-screen": "^2.1.1",
+    "react-player": "^2.14.1",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
     "react-tooltip": "^5.25.1",
+    "sanity-plugin-mux-input": "^2.2.4",
     "sass": "^1.69.6",
     "split-type": "^0.3.4",
     "web-vitals": "^2.1.4"

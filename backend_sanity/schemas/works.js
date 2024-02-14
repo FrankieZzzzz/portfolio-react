@@ -1,3 +1,4 @@
+
 export default {
     name: 'works',
     title: 'Works',
@@ -85,8 +86,16 @@ export default {
           hotspot: true,
         },
       },
-     
-      
+      {
+        name: 'videoFile1',
+        title: 'Video_File1',
+        type: 'file',
+      },
+      {
+        name: 'videoFile2',
+        title: 'Video_File2',
+        type: 'file',
+      },
       {
         name: 'tags',
         title: 'Tags',

@@ -20,7 +20,7 @@ const Project = () => {
     const [selectedWork, setSelectedWork] = useState('');
 
 
-    const [visibleItems, setVisibleItems] = useState(6)
+    const [visibleItems, setVisibleItems] = useState(8)
     const loadMoreItems = () => {
         setVisibleItems( prevValue => prevValue + 4)
     };
@@ -45,7 +45,7 @@ const Project = () => {
             if(item === 'All'){
                 setFilterWork(works);
             }else{
-                setFilterWork(works.filter((work) => work.tags.includes(item)))
+                setFilterWork(works.filter((work) => Array.isArray(work.tags) && work.tags.includes(item)))
             }
         }, 500)
     };
@@ -219,7 +219,7 @@ const Project = () => {
                             whileInView={{x:[-30,0],opacity:[0,1]}}
                             transition={{duration: 0.8, delay: 0.2}}
                         >
-                            <button type='button' onClick={visibleItems<= 10 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 10 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+                            <button type='button' onClick={visibleItems<= 12 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 12 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
                         </motion.div>
                     ) : null}
                 </div>

@@ -5,8 +5,10 @@ import { urlFor, client } from '../../client'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faXmark,faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
-
+import Video1 from "../../assets/animation.mp4";
+import Video2 from "../../assets/animation2.mp4";
 import  {motion} from 'framer-motion';
+import ReactPlayer from 'react-player'
 
 const ProjectModel = ({open, onClose, project}) => {
     const [animateCard, setAnimateCard] = useState({ y:0, opacity: 1});
@@ -88,6 +90,18 @@ const ProjectModel = ({open, onClose, project}) => {
                             ) : ('')}
                             {project.imgUrl_5 ? (
                                 <img src={urlFor(project.imgUrl_5)} alt={project.name} />
+                            ) : ('')}
+                            {project.videoFile1 ? (
+                                <>
+                                    <ReactPlayer url={Video1} controls={true} className='video_position' autoPlay= {true} />
+                                    <p className='ending_content'>THANK YOU</p>
+                                </>
+                            ) : ('')}
+                            {project.videoFile2 ? (
+                                <>
+                                    <ReactPlayer url={Video2} controls={true} className='video_position' autoPlay= {true} />
+                                    <p className='ending_content'>THANK YOU</p>
+                                </>
                             ) : ('')}
                         </motion.div>
                     </div>

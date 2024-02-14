@@ -9,10 +9,12 @@ import {images} from '../../constants';
 
 // icon set
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faArrowRight, faEnvelope, faCircleNodes } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faFile, faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 
 import {AppWrap} from '../../wrapper';
+// import pdfFile from '../../assets/Weini(Frankie)_Zhong_Resume_2024.pdf';
+
 
 // import {MotionWrap} from '../../wrapper'
 
@@ -57,8 +59,8 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href='mailto:zhongweini0703@gmail.com' target='_blank' rel='noreferrer'>
-                  <FontAwesomeIcon icon={faEnvelope} />
+                <a href='/frontend_react/src/assets/Weini(Frankie)_Zhong_Resume_2024.pdf' target='_blank'>
+                  <FontAwesomeIcon icon={faFile} />
                 </a>
               </li>
               <li>
