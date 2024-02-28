@@ -58,16 +58,16 @@ const Header = () => {
                   <FontAwesomeIcon icon={faSquareBehance} />
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href='/frontend_react/src/assets/Weini(Frankie)_Zhong_Resume_2024.pdf' target='_blank'>
                   <FontAwesomeIcon icon={faFile} />
                 </a>
-              </li>
-              <li>
-                <a href='https://app.netlify.com/teams/frankiezzzzz/overview' target='_blank' rel='noreferrer'>
+              </li> */}
+              {/* <li>
+                <a href='https://app.netlify.com/teams/frankiezzzzz' target='_blank' rel='noreferrer'>
                   <FontAwesomeIcon icon={faCircleNodes} />
                 </a>
-              </li>
+              </li> */}
           </ul>
         </motion.div>
         {/* left side icon */}
