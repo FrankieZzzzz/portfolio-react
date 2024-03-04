@@ -2,10 +2,12 @@
 
 :root {
     --mini-font:'Courier Prime', monospace;
-    --content-font:'Roboto',sans-serif;
+    --content-font:'Poppin',sans-serif;
 
     --white-color: #ffffff;
     --deepBlue-color: #0D192E;
+    --blue-color: #111F39;
+
     --lightBlue-color: #BBDEFB;
     --mainPurple-color: #815cf0;
     --gray-color: #C5C5C5;

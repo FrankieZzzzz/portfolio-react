@@ -8,7 +8,8 @@ import {faGithub, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import Video1 from "../../assets/animation.mp4";
 import Video2 from "../../assets/animation2.mp4";
 import  {motion} from 'framer-motion';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+import 'balloon-css';
 
 const ProjectModel = ({open, onClose, project}) => {
     const [animateCard, setAnimateCard] = useState({ y:0, opacity: 1});
@@ -51,21 +52,28 @@ const ProjectModel = ({open, onClose, project}) => {
                                 {project.netlify &&(
                                     <a href={project.netlify} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>
-                                            <FontAwesomeIcon icon={faCircleNodes} />
+                                            {/* <FontAwesomeIcon icon={faCircleNodes} /> */}
+                                            <button aria-label="Website" data-balloon-pos="up"><FontAwesomeIcon icon={faCircleNodes} /></button>
+
                                         </div>
                                     </a>
                                 )}
                                 {project.projectLink && (
                                     <a href={project.projectLink} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>
-                                            <FontAwesomeIcon icon={faSquareBehance} />
+                                            {/* <FontAwesomeIcon icon={faSquareBehance} /> */}
+                                            <button aria-label="Behance" data-balloon-pos="up"><FontAwesomeIcon icon={faSquareBehance} /></button>
+
                                         </div>
                                     </a>
                                 )}
                                 {project.codeLink && (
                                     <a href={project.codeLink} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>
-                                            <FontAwesomeIcon icon={faGithub} />
+                                            {/* <FontAwesomeIcon icon={faGithub} /> */}
+                                            <button aria-label="Github" data-balloon-pos="up"><FontAwesomeIcon icon={faGithub} /></button>
+
+                                             
                                         </div>
                                     </a>
                                 )}
@@ -73,11 +81,23 @@ const ProjectModel = ({open, onClose, project}) => {
                         </motion.div>
                         {/* image content */}
                         <motion.div className='app__projectModel-imgContent'>
-                            {project.imgUrl_description ? (
-                                <img src={urlFor(project.imgUrl_description)} alt={project.name} />
-                            ) : ('')}
-                            {project.imgUrl_1 ? (
-                                <img src={urlFor(project.imgUrl_1)} alt={project.name} />
+                            {project.imgUrl ? (
+                                 <>  
+                                    <div className='app_project-introBox'>
+                                        <h3>{project.title}</h3>
+                                        <div className='app_project-intro'>
+                                            <h5>DESCRIPTION</h5>
+                                            <p>{project.imgUrl_description.intro}</p>
+                                        </div>
+                                        <div className='app_project-intro'>
+                                            <h5>SKILLS</h5>
+                                            <p>{project.imgUrl_description.skills}</p>
+                                            <h5>CATEGORIES</h5>
+                                            <p>{project.imgUrl_description.categories}</p>
+                                        </div>
+                                    </div>
+                                    <img src={urlFor(project.imgUrl_1)} alt={project.name} />
+                                </>
                             ) : ('')}
                             {project.imgUrl_2 ? (
                                 <img src={urlFor(project.imgUrl_2)} alt={project.name} />

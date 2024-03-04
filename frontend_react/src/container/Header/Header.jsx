@@ -45,17 +45,22 @@ const Header = () => {
           <ul>
               <li>
                 <a href='https://github.com/FrankieZzzzz' target='_blank' rel='noreferrer'>
-                  <FontAwesomeIcon icon={faGithub} />
+                  <button aria-label="Github" data-balloon-pos="right"><FontAwesomeIcon icon={faGithub} /></button>
+                  {/* <FontAwesomeIcon icon={faGithub} /> */}
                 </a>
               </li>
               <li>
                 <a href='https://www.linkedin.com/in/weinizhong73/' target='_blank' rel='noreferrer'>
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  {/* <FontAwesomeIcon icon={faLinkedin} /> */}
+                  <button aria-label="Linkedin" data-balloon-pos="right"><FontAwesomeIcon icon={faLinkedin} /></button>
+
                 </a>
               </li>
               <li>
                 <a href='https://www.behance.net/zhongweini0703' target='_blank' rel='noreferrer'>
-                  <FontAwesomeIcon icon={faSquareBehance} />
+                  {/* <FontAwesomeIcon icon={faSquareBehance} /> */}
+                  <button aria-label="Behance" data-balloon-pos="right"><FontAwesomeIcon icon={faSquareBehance} /></button>
+
                 </a>
               </li>
               {/* <li>

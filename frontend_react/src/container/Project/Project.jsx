@@ -206,7 +206,7 @@ const Project = () => {
                                     >       
                                         <div className='app__project-text'>
                                             <h4>{work.title}</h4>
-                                            <span>{work.description}</span>
+                                            <span>{work.desc}</span>
                                         </div>
                                     </motion.div>
                                 </div>

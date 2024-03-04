@@ -169,7 +169,7 @@
     align-items: center;
 
     .app__projects-item{
-        width: 400px;
+        width: 430px;
         flex-direction: column;
 
         margin: 0.5rem;
@@ -183,7 +183,7 @@
             box-shadow: 0 0 25px rgba(0,0,0,0.4);
         }
         @media screen and (min-width:1200px) {
-            width: 490px;
+            width: 590px;
             border-radius: 0.75rem;
         }
         @media screen and (max-width:520px) {

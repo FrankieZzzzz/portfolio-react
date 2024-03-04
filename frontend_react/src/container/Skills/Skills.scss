@@ -39,8 +39,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+        width: 70%;
+    }
     @media screen and (min-width: 1200px) {
-        width: 24%;
+        width: 34%;
     }
     @media screen and (min-width: 2000px) {
         width: 35%;
@@ -82,7 +85,7 @@
 
 
     @media screen and (min-width: 1200px) {
-        width: 60%;
+        width: 70%;
     }
     @media screen and (max-width: 900px) {
         margin-top: 2rem;

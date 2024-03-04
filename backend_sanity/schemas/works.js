@@ -11,8 +11,8 @@ export default {
       },
     
       {
-        name: 'description',
-        title: 'Description',
+        name: 'desc',
+        title: 'Desc',
         type: 'string',
       },
       {
@@ -41,10 +41,23 @@ export default {
        {
         name: 'imgUrl_description',
         title: 'ImageUrl Description',
-        type: 'image',
-        options: {
-          hotspot: true,
-        },
+        type: 'document',
+        fields:[
+           {    name:'intro',
+               title:'Intro',
+               type:'string'
+            },
+            {
+                name:'skills',
+                title:'Skills',
+                type:'string'
+            },
+            {
+                name:'categories',
+                title:'Categories',
+                type:'string'
+            }
+    ]
       },
       {
         name: 'imgUrl_1',
@@ -81,6 +94,14 @@ export default {
       {
         name: 'imgUrl_5',
         title: 'ImageUrl_5',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'imgUrl_6',
+        title: 'ImageUrl_6',
         type: 'image',
         options: {
           hotspot: true,
