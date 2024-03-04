@@ -13,7 +13,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Project = () => {
     const [openModal, setOpenModal] = useState(false)
-    const [activeFilter, setactiveFilter] = useState('All');
+    const [activeFilter, setactiveFilter] = useState('Everything');
     const [animateCard, setAnimateCard] = useState({ y:0, opacity: 1});
     const [works, setWorks] = useState([]);
     const [filterWork, setFilterWork] = useState([]);
@@ -42,7 +42,7 @@ const Project = () => {
         setAnimateCard([{y:100, opacity:0}])
         setTimeout(() => {
             setAnimateCard([{y:0, opacity:1}])
-            if(item === 'All'){
+            if(item === 'Everything'){
                 setFilterWork(works);
             }else{
                 setFilterWork(works.filter((work) => Array.isArray(work.tags) && work.tags.includes(item)))
@@ -89,7 +89,7 @@ const Project = () => {
                         </div>
                     </motion.div>
                     <div className="app__projects-filter">
-                        {['All', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
+                        {['Everything', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
@@ -144,7 +144,7 @@ const Project = () => {
                             </div>
                         ))}
                     </motion.div>
-                    {activeFilter === 'All' ? (
+                    {activeFilter === 'Everything' ? (
                         <motion.div
                             className='app__flex'
                             whileInView={{x:[-50,0],opacity:[0,1]}}
@@ -176,7 +176,7 @@ const Project = () => {
                     </motion.div>
                     {/* filter */}
                     <div className="app__projects-filter">
-                            {['All', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
+                            {['Everything', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
@@ -213,7 +213,7 @@ const Project = () => {
                             </div>
                         ))}
                     </motion.div>
-                    {activeFilter === 'All'? (
+                    {activeFilter === 'Everything'? (
                         <motion.div
                             className='app__flex'
                             whileInView={{x:[-30,0],opacity:[0,1]}}

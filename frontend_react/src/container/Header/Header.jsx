@@ -13,7 +13,7 @@ import { faArrowRight, faFile, faCircleNodes } from "@fortawesome/free-solid-svg
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 
 import {AppWrap} from '../../wrapper';
-// import pdfFile from '../../assets/Weini(Frankie)_Zhong_Resume_2024.pdf';
+import pdfFile from '../../assets/Weini(Frankie)_Zhong_Resume_2024.pdf';
 
 
 // import {MotionWrap} from '../../wrapper'
@@ -63,11 +63,12 @@ const Header = () => {
 
                 </a>
               </li>
-              {/* <li>
-                <a href='/frontend_react/src/assets/Weini(Frankie)_Zhong_Resume_2024.pdf' target='_blank'>
-                  <FontAwesomeIcon icon={faFile} />
+              <li>
+                <a href={pdfFile} target="_blank" rel="noopener noreferrer">
+                  {/* <FontAwesomeIcon icon={faFile} /> */}
+                   <button aria-label="Resume" data-balloon-pos="right"><FontAwesomeIcon icon={faFile} /></button>
                 </a>
-              </li> */}
+              </li>
               {/* <li>
                 <a href='https://app.netlify.com/teams/frankiezzzzz' target='_blank' rel='noreferrer'>
                   <FontAwesomeIcon icon={faCircleNodes} />
