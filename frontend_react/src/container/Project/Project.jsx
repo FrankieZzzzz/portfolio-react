@@ -89,7 +89,7 @@ const Project = () => {
                         </div>
                     </motion.div>
                     <div className="app__projects-filter">
-                        {['Everything', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
+                        {['Everything', 'Web Development', 'Graphic Design', 'UI/UX', 'Branding'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
@@ -176,7 +176,7 @@ const Project = () => {
                     </motion.div>
                     {/* filter */}
                     <div className="app__projects-filter">
-                            {['Everything', 'Web Design', 'UI/UX', 'Branding', 'Graphic Design'].map((item, index) => (
+                        {['Everything', 'Web Development', 'Graphic Design', 'UI/UX', 'Branding'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}

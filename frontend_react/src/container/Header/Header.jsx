@@ -69,11 +69,6 @@ const Header = () => {
                    <button aria-label="Resume" data-balloon-pos="right"><FontAwesomeIcon icon={faFile} /></button>
                 </a>
               </li>
-              {/* <li>
-                <a href='https://app.netlify.com/teams/frankiezzzzz' target='_blank' rel='noreferrer'>
-                  <FontAwesomeIcon icon={faCircleNodes} />
-                </a>
-              </li> */}
           </ul>
         </motion.div>
         {/* left side icon */}
@@ -91,7 +86,7 @@ const Header = () => {
             <div className='header-content app__flex'>
               <h1 className='p-text'>Frankie Zhong</h1>
               <h2 className='p-text ' >I build things for <span>{typeEffect}</span></h2>
-              <p>Hello! My name is Frankie and I'm a dedicated <span>Web Developer</span> and <span>UX Designer</span> with a profound passion for the design industry. I've built a strong foundation in aesthetics and design through my <span>Art Design degree</span>. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+              <p>Hello! My name is Frankie and I'm a dedicated <span>Graphic Designer</span> and <span>Web Developer</span> with a profound passion for the <span>problem-solving</span>. I've built a strong foundation in aesthetics and design through my <span>Art Design degree</span>. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
             </div>
           </div>
         </motion.div>
@@ -149,7 +144,7 @@ const Header = () => {
               />
           </motion.div>
           <div className='header-content app__flex'>
-            <p>Hello! My name is Frankie and I'm a dedicated <span>Web Developer</span> and <span>UX Designer</span> with a profound passion for the design industry. I've built a strong foundation in aesthetics and design through my <span>Art Design degree</span>. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+            <p>Hello! My name is Frankie and I'm a dedicated <span>Graphic Designer</span> and <span>Web Developer</span> with a profound passion for problem-solving. I've built a strong foundation in aesthetics and design through my <span>Art Design degree</span>. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
           </div>
         </motion.div>
       </div>
