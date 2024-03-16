@@ -59,7 +59,7 @@ const Footer = () => {
     <div className='app__footer ' id='Contact'>
       {/* title */}
       <motion.div
-        whileInView={{x:[-100,0],opacity:[0,1]}}
+        whileinview={{x:[-100,0],opacity:[0,1]}}
         transition={{duration: 0.8}}
         className='app_project-info'
       >
@@ -73,7 +73,7 @@ const Footer = () => {
       {/* form */}
       <div className='app__footer-box'>
         <motion.div 
-          whileInView={{x:[-100,0],opacity:[0,1]}}
+          whileinview={{x:[-100,0],opacity:[0,1]}}
           transition={{duration: 0.8}}
           className='app__footer-card'>
           <h5>Keep in touch</h5>

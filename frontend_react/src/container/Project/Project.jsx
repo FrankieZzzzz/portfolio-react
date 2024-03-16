@@ -75,7 +75,7 @@ const Project = () => {
             <>
                 <div className='app__projects' id='Project'>
                     <motion.div 
-                        whileInView={{x:[-100,0],opacity:[0,1]}}
+                        whileinview={{x:[-100,0],opacity:[0,1]}}
                         transition={{duration: 0.8}}
                         className='app_project-info' >
                         <div className='app_project-title'>
@@ -86,10 +86,10 @@ const Project = () => {
                         </div>
                     </motion.div>
                     <motion.div 
-                        whileInView={{opacity: [0,1]}}
+                        whileinview={{opacity: [0,1]}}
                         transition={{duration: 2.3, delayChildren:1}}
                         className="app__projects-filter">
-                        {['Everything', 'Web Development', 'Graphic Design', 'UI/UX', 'Branding'].map((item, index) => (
+                        {['Everything', 'Graphic Design', 'Web Design', 'UI/UX', 'Branding'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
@@ -158,7 +158,7 @@ const Project = () => {
             <>
                 <div className='app__projects'>
                     <motion.div
-                        whileInView={{x:[-100,0],opacity:[0,1]}}
+                        whileinview={{x:[-100,0],opacity:[0,1]}}
                         transition={{duration: 0.8}}
                         className='app_project-info'
                     >
@@ -171,10 +171,10 @@ const Project = () => {
                     </motion.div>
                     {/* filter */}
                     <motion.div 
-                        whileInView={{opacity: [0,1]}}
+                        whileinview={{opacity: [0,1]}}
                         transition={{duration: 2.3, delayChildren:1}}
                         className="app__projects-filter">
-                        {['Everything', 'Web Development', 'Graphic Design', 'UI/UX', 'Branding'].map((item, index) => (
+                        {['Everything', 'Graphic Design', 'Web Design', 'UI/UX', 'Branding'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
@@ -194,7 +194,7 @@ const Project = () => {
                             <motion.div 
                                 className='app__projects-item app__flex' 
                                 key={index} 
-                                whileInView={{opacity: [0,1]}} 
+                                whileinview={{opacity: [0,1]}} 
                                 transition={{ duration: 2, delayChildren: 1 ,ease: 'easeIn' }}
                                 >
                                 <div 
@@ -222,7 +222,7 @@ const Project = () => {
                     {activeFilter === 'Everything'? (
                         <div
                             className='app__flex'
-                            whileInView={{x:[-30,0],opacity:[0,1]}}
+                            whileinview={{x:[-30,0],opacity:[0,1]}}
                             transition={{duration: 0.8, delay: 0.2}}
                         >
                             <button type='button' onClick={visibleItems<= 12 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 12 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>

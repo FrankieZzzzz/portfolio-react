@@ -11,7 +11,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Skills = () => {
   const [experiences, setExperience] = useState([])
   const [skills, setSkills] = useState([])  
-  const [resume, setResume] = useState([])  
   useEffect(() => {
     const query = '*[_type == "experiences"] | order(year desc)';
     const skillQuery = '*[_type == "skills"] | order(company desc)';
@@ -29,7 +28,7 @@ const Skills = () => {
   return (
     <div className='app__skills ' id='Skills'>
         <motion.div 
-            whileInView={{x:[-100,0],opacity:[0,1]}}
+            whileinview={{x:[-100,0],opacity:[0,1]}}
             transition={{duration: 0.8}}
             className='app_project-info' 
         >
@@ -45,12 +44,12 @@ const Skills = () => {
             <div className='app__skills-list'>
                 {skills.map((skills) => (
                 <motion.div 
-                    whileInView={{opacity: [0,1]}}
+                    whileinview={{opacity: [0,1]}}
                     transition={{duration: 2.3, delayChildren:1}}
                     className='app__skills-item app__flex' 
                     key={skills.name} 
                 >
-                    <div className='app__flex' style={{ backgroundColor: skills.bgColor}}>
+                    <div className='app__flex'>
                         <img src={urlFor(skills.icon)} alt={skills.name}/>
                     </div>
                 </motion.div>
@@ -58,14 +57,14 @@ const Skills = () => {
             </div>
             {/* experience list */}
             <motion.div 
-                whileInView={{ opacity:[0,1] }}
+                whileinview={{ opacity:[0,1] }}
                 transition={{ duration: 1.5, delayChildren: 1 }}
                 className='app__skills-exp'>
                 {experiences.map((experiences) => (
                     <motion.div 
                         className='app__skills-exp-item'  
                         key={experiences.year} 
-                        whileInView={{opacity: [0,1]}}
+                        whileinview={{opacity: [0,1]}}
                         transition={{duration: 2.3, staggerChildren:1.5}}
                         >
                         <div className='app__skills-exp-year'>
