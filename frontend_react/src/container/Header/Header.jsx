@@ -98,7 +98,7 @@ const Header = () => {
             <div className='header-content app__flex'>
               <h1 className='p-text'>Frankie Zhong</h1>
               <h2 className='p-text ' >I build things for <span>{typeEffect}</span></h2>
-              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Developer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Designer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
             </div>
           </div>
         </motion.div>
@@ -142,7 +142,7 @@ const Header = () => {
               />
           </motion.div>
           <div className='header-content app__flex'>
-              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Developer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Designer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
           </div>
         </div>
       </div>
