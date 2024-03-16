@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c47f219a.css",
-    "main.js": "/static/js/main.4c90bc7a.js",
+    "main.css": "/static/css/main.610279f8.css",
+    "main.js": "/static/js/main.750d7d28.js",
     "static/js/990.efc5417f.chunk.js": "/static/js/990.efc5417f.chunk.js",
     "static/js/726.e60714fe.chunk.js": "/static/js/726.e60714fe.chunk.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.cd657de2.chunk.js",
@@ -26,13 +26,13 @@
     "static/media/Travel-website.jpg": "/static/media/Travel-website.7c8cf6dccbe19e8fc0d4.jpg",
     "static/media/brand-design.jpg": "/static/media/brand-design.d1400debeaf54a487062.jpg",
     "static/media/magazine-design.jpg": "/static/media/magazine-design.249cd6c9706edb031031.jpg",
-    "static/media/Weini(Frankie)_Zhong_Resume_2024.pdf": "/static/media/Weini(Frankie)_Zhong_Resume_2024.5b652f0022767df062ef.pdf",
+    "static/media/Weini(Frankie)_Zhong_Resume_2024.pdf": "/static/media/Weini(Frankie)_Zhong_Resume_2024.4880296f16ad0a8504c3.pdf",
     "static/media/Frankie.png": "/static/media/Frankie.e6d42fb41a9072094906.png",
     "static/media/weather-app.png": "/static/media/weather-app.0eb9abc402a679212f1e.png",
     "static/media/world-clock.png": "/static/media/world-clock.725da7f669fd838ff896.png",
     "index.html": "/index.html",
-    "main.c47f219a.css.map": "/static/css/main.c47f219a.css.map",
-    "main.4c90bc7a.js.map": "/static/js/main.4c90bc7a.js.map",
+    "main.610279f8.css.map": "/static/css/main.610279f8.css.map",
+    "main.750d7d28.js.map": "/static/js/main.750d7d28.js.map",
     "990.efc5417f.chunk.js.map": "/static/js/990.efc5417f.chunk.js.map",
     "726.e60714fe.chunk.js.map": "/static/js/726.e60714fe.chunk.js.map",
     "reactPlayerYouTube.cd657de2.chunk.js.map": "/static/js/reactPlayerYouTube.cd657de2.chunk.js.map",
@@ -50,7 +50,7 @@
     "reactPlayerPreview.02c82c84.chunk.js.map": "/static/js/reactPlayerPreview.02c82c84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c47f219a.css",
-    "static/js/main.4c90bc7a.js"
+    "static/css/main.610279f8.css",
+    "static/js/main.750d7d28.js"
   ]
 }
