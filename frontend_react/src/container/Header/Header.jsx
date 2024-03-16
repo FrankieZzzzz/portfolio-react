@@ -149,5 +149,4 @@ const Header = () => {
     </section>
   )
 }
-
 export default AppWrap(Header, 'Header')

@@ -11,10 +11,6 @@ import {images} from '../../constants';
 
 import {AppWrap} from '../../wrapper';
 
-
-
-
-
 const Work = () => {
 
   return (

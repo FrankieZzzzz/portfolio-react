@@ -70,8 +70,6 @@ const Project = () => {
             return(null)
         }
     };
-
-        
     if (isMobile){
         return (
             <>
