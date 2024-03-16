@@ -5,8 +5,9 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from 'split-type'
-import {AppWrap} from '../../wrapper';
 import './Statement.scss';
+import  {motion} from 'framer-motion';
+
 
 const Statement = () => {
 
@@ -15,7 +16,6 @@ const Statement = () => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 1200);
         };
-
         window.addEventListener('resize', handleResize )
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -45,7 +45,6 @@ const Statement = () => {
           scrub: true,
           markers: false,
           colorProps: {color: 'hsl(#7F5AF0 50% 20%)'},
-          // toggleActions:'play play reverse reverse'
         }
       }
   )}, )
@@ -53,10 +52,13 @@ const Statement = () => {
   return(
     <div className='app__statement' id='Statement'>
       <div className='app_project-info'>
-        <div className='header-title app_flex'>
+        <motion.div 
+          whileInView={{x:[-100,0],opacity:[0,1]}}
+          transition={{duration: 0.8}}  
+          className='header-title app_flex'>
             <FontAwesomeIcon icon={faArrowRight} />
             <span className='p-text'>I want to say</span>
-        </div>
+        </motion.div>
       </div>
         <p className='app__statment-content' data-bg-color="#BBDEFB" data-fg-color='#7F5AF0'>
           "I believe in the power of simplicity and purposeful design, using creativity to communicate ideas with clarity and evoke meaningful emotions."

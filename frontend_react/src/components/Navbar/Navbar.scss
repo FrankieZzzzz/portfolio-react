@@ -1,6 +1,5 @@
 .app__navbar{
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +10,6 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 
-    box-shadow: 5px 5px 30px 5px #08112183;
     position: fixed;
     z-index: 2000;
 
@@ -19,8 +17,9 @@
         padding: 1.5rem 2.8rem;
     }
 }
-
-
+.shadow-header{
+    box-shadow: 5px 5px 30px 5px #08112183;
+}
 .app__navbar-logo{
     display: flex;
     justify-content: flex-start;

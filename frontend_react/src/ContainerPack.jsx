@@ -61,14 +61,14 @@ const ContainerPack = () => {
             variants={variants}
             animate={cursorVariant}
         />
-        <Navbar />
-        <Header />
-        <Project />
-        <Skills />
-        <Statement />
-        <Footer />
+            <Navbar />
+            <Header />
+            <Project />
+            <Skills />
+            <Statement />
+            <Footer />
         <motion.div className='footer_text' onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <p>Loosely designed in Figma and coded in Visual Studio Code. Open sourced on <a href='https://github.com/FrankieZzzzz' target='_black' rel='referrence'>GitHub</a> and deployed with Netlify</p>
+            <p>Designed in Figma and coded in Visual Studio Code. Open sourced on <a href='https://github.com/FrankieZzzzz' target='_black' rel='referrence'>GitHub</a> and deployed with Netlify</p>
         </motion.div>
       </div>
   )

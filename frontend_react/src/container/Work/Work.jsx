@@ -1,7 +1,6 @@
 import React from 'react';
 import './Work.scss';
 import  {motion} from 'framer-motion';
-// import {images} from '../../constants';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import {Nav, Tab, Row, Container, Col} from 'react-bootstrap';
@@ -18,81 +17,11 @@ import {AppWrap} from '../../wrapper';
 
 const Work = () => {
 
-  const projects =[
-    {
-      title: 'Toronto Weather App',
-      description: 'An app that updates weather data in real time',
-      imgUrl: images.WeatherApp,
-      gitHubLink: 'https://github.com/FrankieZzzzz',
-      behanceLink:'https://www.behance.net/zhongweini0703',
-      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
-
-    },
-    {
-      title: 'project2',
-      description: 'project2',
-      imgUrl: images.TravelWeb,
-      gitHubLink: 'https://github.com/FrankieZzzzz',
-      behanceLink:'https://www.behance.net/zhongweini0703',
-      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
-    },
-    {
-      title: 'project3',
-      description: 'project3',
-      imgUrl: images.BrandDesign,
-      gitHubLink: '',
-      behanceLink:'https://www.behance.net/zhongweini0703',
-      netlify: ''
-    },
-    {
-      title: 'project4',
-      description: 'project4',
-      imgUrl: images.WorldClock,
-      gitHubLink: 'https://github.com/FrankieZzzzz',
-      behanceLink:'https://www.behance.net/zhongweini0703',
-      netlify: 'https://app.netlify.com/teams/frankiezzzzz/overview'
-    },
-    {
-      title: 'project5',
-      description: 'project5',
-      imgUrl: images.CaseStudy,
-      gitHubLink: '',
-      behanceLink:'https://www.behance.net/zhongweini0703',
-      netlify: ''
-
-    },
-    {
-      title: 'project6',
-      description: 'project6',
-      imgUrl: images.MaskPSA,
-      gitHubLink: '',
-      behanceLink:'https://www.behance.net/zhongweini0703',
-      netlify: ''
-
-    },
-    {
-      title: 'project7',
-      description: 'project7',
-      imgUrl: images.MagazineDesign,
-      gitHubLink: '',
-      behanceLink:'https://www.behance.net/zhongweini0703',
-      netlify: ''
-    },
-    {
-      title: 'project8',
-      description: 'project8',
-      imgUrl: images.PosterDesign,
-      gitHubLink: '',
-      behanceLink:'https://www.behance.net/zhongweini0703',
-      netlify: ''
-    },
-  ]
   return (
     <section id={Work} className='app__workBox'>
-      <motion.div
+      <motion.div className='app__header-info' 
         whileInView={{x:[-100,0],opacity:[0,1]}}
         transition={{duration: 0.8}}
-        className='app__header-info'
       >
         <div className='app__header-title'>
           <div className='header-title app_flex'>

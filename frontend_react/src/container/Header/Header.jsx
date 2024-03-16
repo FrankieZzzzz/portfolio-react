@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react'
+
+import React, {useState, useEffect} from 'react'
+
 import './Header.scss';
 import '../Project/Project.scss'
-
 
 import {useTypewriter} from 'react-simple-typewriter'
 import {motion, useAnimation} from 'framer-motion';
@@ -9,14 +10,11 @@ import {images} from '../../constants';
 
 // icon set
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faArrowRight, faFile, faCircleNodes } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faFile,faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 
 import {AppWrap} from '../../wrapper';
 import pdfFile from '../../assets/Weini(Frankie)_Zhong_Resume_2024.pdf';
-
-
-// import {MotionWrap} from '../../wrapper'
 
 const Header = () => {
   // typewriter effect
@@ -28,56 +26,70 @@ const Header = () => {
   })
   const controls = useAnimation();
   useEffect(() => {
-    controls.start({x: 0, opacity:1});}
-    , [controls]);
+      controls.start({x: 0, opacity:1});}
+      , [controls]);
 
+  // show scroll up bar
+  const [backToTopBtn, setBackToTopBtn] = useState(false);
+  useEffect(() => {
+    const scrollUp = () => {
+      if(window.scrollY >= 350){
+        setBackToTopBtn(true)
+      }else{
+        setBackToTopBtn(false)
+      }
+    }
+      window.addEventListener('scroll', scrollUp);
+    return() => {
+      window.addEventListener('scroll', scrollUp)
+    };
+  }, [])
+  // back to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    })
+  }
   return (
-    <section className='app__headerBox' >
-      <div id='About' />
+    <section className='app__headerBox' id='top'>
+      {/* <div id='About' /> */}
       <div className='app__header app__flex' id='home'>
         {/* left side icon */}
-        <motion.div
-          whileInView={{x:[-50,0],opacity:[0.5,1]}}
-          transition={{duration: 0.4}}
-          animate= {controls}
-          className='app_header-icon'
-        >
+        <div className='app_header-icon'>
           <ul>
               <li>
                 <a href='https://github.com/FrankieZzzzz' target='_blank' rel='noreferrer'>
                   <button aria-label="Github" data-balloon-pos="right"><FontAwesomeIcon icon={faGithub} /></button>
-                  {/* <FontAwesomeIcon icon={faGithub} /> */}
                 </a>
               </li>
               <li>
                 <a href='https://www.linkedin.com/in/weinizhong73/' target='_blank' rel='noreferrer'>
-                  {/* <FontAwesomeIcon icon={faLinkedin} /> */}
                   <button aria-label="Linkedin" data-balloon-pos="right"><FontAwesomeIcon icon={faLinkedin} /></button>
-
                 </a>
               </li>
               <li>
                 <a href='https://www.behance.net/zhongweini0703' target='_blank' rel='noreferrer'>
-                  {/* <FontAwesomeIcon icon={faSquareBehance} /> */}
                   <button aria-label="Behance" data-balloon-pos="right"><FontAwesomeIcon icon={faSquareBehance} /></button>
-
                 </a>
               </li>
               <li>
                 <a href={pdfFile} target="_blank" rel="noopener noreferrer">
-                  {/* <FontAwesomeIcon icon={faFile} /> */}
                    <button aria-label="Resume" data-balloon-pos="right"><FontAwesomeIcon icon={faFile} /></button>
                 </a>
               </li>
           </ul>
-        </motion.div>
+        </div>
+        {/* scroll up btn */}
+        <a className={`scrollup ${backToTopBtn ? 'show-scroll':''}`} onClick={scrollToTop}>
+          <FontAwesomeIcon icon={faArrowUp} />
+        </a>
         {/* left side icon */}
         {/* textcontent */}
-        <motion.div
+        <motion.div 
           whileInView={{x:[-100,0],opacity:[0,1]}}
           transition={{duration: 0.8}}
-          className='app_project-info'
-        >
+          className='app_project-info' >
           <div className='app_project-title'>
             <div className='header-title app_flex'>
               <FontAwesomeIcon icon={faArrowRight} />
@@ -86,67 +98,53 @@ const Header = () => {
             <div className='header-content app__flex'>
               <h1 className='p-text'>Frankie Zhong</h1>
               <h2 className='p-text ' >I build things for <span>{typeEffect}</span></h2>
-              <p>Hello! My name is Frankie and I'm a dedicated <span>Graphic Designer</span> and <span>Web Developer</span> with a profound passion for the <span>problem-solving</span>. I've built a strong foundation in aesthetics and design through my <span>Art Design degree</span>. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Developer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
             </div>
           </div>
         </motion.div>
         {/* textcontent */}
         {/* image */}
-        <motion.div
+        <motion.div 
+          whileInView={{ opacity:[0,1] }}
+          transition={{ duration: 1, delayChildren: 0.5 }}
+          className='app_header-img' >
+          <motion.img 
             whileInView={{ opacity:[0,1] }}
-            transition={{ duration: 0.8, delayChildren: 0.5 }}
-            className='app_header-img'
-        >
-          <motion.img
-            whileInView={{ scale:[0,1] }}
             transition={{ duration: 1, ease: 'easeInOut' }}
             src={images.Frankie}
-            className='image_profile'
-          />
+            className='image_profile' />
         </motion.div>
         {/* image */}
         {/* decoration image */}
-        <motion.div
-            whileInView={{ opacity:[0,1] }}
-            transition={{ duration: 0.8, delayChildren: 0.5 }}
-            className='app_header-Deco'
-        >
-          
-          <motion.img
-            whileInView={{ scale:[0,1] }}
-            transition={{ duration: 1, ease: 'easeInOut' }}
-            src={images.Deco}
-            className='image_deco'
-          />
-        </motion.div>
+        <div className='app_header-Deco'>
+          <img src={images.Deco} className='image_deco' />
+        </div>
       </div>
-      {/* about part */}
+      {/* mobile about part */}
       <div id='app__header-mobile' className='app__header'>
-        <motion.div
-          whileInView={{x:[-100,0],opacity:[0,1]}}
-          transition={{duration: 0.8}}
-          className='app_header-mobileText app_project-info'
-        >
-          <div className='header-title app_flex'>
+        <div className='app_header-mobileText app_project-info' >
+          <motion.div 
+          
+            className='header-title app_flex'>
             <FontAwesomeIcon icon={faArrowRight} />
             <span className='p-text'>About</span>
-          </div>
+          </motion.div>
           <motion.div
-              whileInView={{ opacity:[0,1] }}
-              transition={{ duration: 0.8, delayChildren: 0.5 }}
+              whileInView={{opacity: [0,1]}} 
+              transition={{ duration: 1, delayChildren: 1 ,ease: 'easeIn' }}
               className='app_mobileText-img'
               >
               <motion.img
-                whileInView={{ scale:[0,1] }}
-                transition={{ duration: 1, ease: 'easeInOut' }}
+                whileInView={{opacity: [0,1]}} 
+                transition={{ duration: 0.65, ease: 'easeInOut'}}
                 src={images.Frankie}
                 className='image_profile'
               />
           </motion.div>
           <div className='header-content app__flex'>
-            <p>Hello! My name is Frankie and I'm a dedicated <span>Graphic Designer</span> and <span>Web Developer</span> with a profound passion for problem-solving. I've built a strong foundation in aesthetics and design through my <span>Art Design degree</span>. Fuelled by a love for digital media and an unwavering commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Developer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

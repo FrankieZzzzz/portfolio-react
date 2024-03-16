@@ -76,11 +76,10 @@ const Project = () => {
         return (
             <>
                 <div className='app__projects' id='Project'>
-                    <motion.div
+                    <motion.div 
                         whileInView={{x:[-100,0],opacity:[0,1]}}
                         transition={{duration: 0.8}}
-                        className='app_project-info'
-                    >
+                        className='app_project-info' >
                         <div className='app_project-title'>
                             <div className='header-title app_flex'>
                                 <FontAwesomeIcon icon={faArrowRight} />
@@ -88,7 +87,10 @@ const Project = () => {
                             </div>
                         </div>
                     </motion.div>
-                    <div className="app__projects-filter">
+                    <motion.div 
+                        whileInView={{opacity: [0,1]}}
+                        transition={{duration: 2.3, delayChildren:1}}
+                        className="app__projects-filter">
                         {['Everything', 'Web Development', 'Graphic Design', 'UI/UX', 'Branding'].map((item, index) => (
                             <div
                                 key={index}
@@ -98,12 +100,11 @@ const Project = () => {
                                 {item}
                             </div>
                         ))}
-                    </div>
-                    <motion.div
+                    </motion.div>
+                    <motion.div 
                         animate={animateCard}
-                        transition = {{duration: 0.5, delayChildren: 0.5}}
-                        className='app__projects-portfolioMobile'
-                    >
+                        transition = {{duration: 1.5, delayChildren: 0.5}}
+                        className='app__projects-portfolioMobile'>
                         {filterWork.slice(0, visibleItems).map((work, index) => (
                             <div className='app__projects-item app__flex' key={index}>
                                 <div className='app__projects-img app__flex'>
@@ -145,13 +146,9 @@ const Project = () => {
                         ))}
                     </motion.div>
                     {activeFilter === 'Everything' ? (
-                        <motion.div
-                            className='app__flex'
-                            whileInView={{x:[-50,0],opacity:[0,1]}}
-                            transition={{duration: 0.8, delay: 0.2}}
-                        >
+                        <div className='app__flex' >
                             <button type='button' onClick={visibleItems<= 10 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 10 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
-                        </motion.div>
+                        </div>
                     ) : null}
                 </div>
                 <ProjectModel open={openModal} project={selectedWork} onClose={(() => setOpenModal(false))}/>
@@ -175,7 +172,10 @@ const Project = () => {
                         </div>
                     </motion.div>
                     {/* filter */}
-                    <div className="app__projects-filter">
+                    <motion.div 
+                        whileInView={{opacity: [0,1]}}
+                        transition={{duration: 2.3, delayChildren:1}}
+                        className="app__projects-filter">
                         {['Everything', 'Web Development', 'Graphic Design', 'UI/UX', 'Branding'].map((item, index) => (
                             <div
                                 key={index}
@@ -185,16 +185,24 @@ const Project = () => {
                                 {item}
                             </div>
                         ))}
-                    </div>
+                    </motion.div>
                     {/* project box */}
                     <motion.div
                         animate={animateCard}
-                        transition = {{duration: 0.5, delayChildren: 0.5}}
+                        transition = {{duration: 1.5, delayChildren: 0.5}}
                         className='app__projects-portfolio'
                     >
                         {filterWork.slice(0, visibleItems).map((work, index) => (
-                            <div className='app__projects-item app__flex' key={index}>
-                                <div className='app__projects-img app__flex' onClick={() => handleProjectItemClick(work)} >
+                            <motion.div 
+                                className='app__projects-item app__flex' 
+                                key={index} 
+                                whileInView={{opacity: [0,1]}} 
+                                transition={{ duration: 2, delayChildren: 1 ,ease: 'easeIn' }}
+                                >
+                                <div 
+                                    className='app__projects-img app__flex' 
+                                    onClick={() => handleProjectItemClick(work)} 
+                                >
                                     <img 
                                         src={urlFor(work.imgUrl)} 
                                         alt={work.name} 
@@ -210,20 +218,19 @@ const Project = () => {
                                         </div>
                                     </motion.div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </motion.div>
                     {activeFilter === 'Everything'? (
-                        <motion.div
+                        <div
                             className='app__flex'
                             whileInView={{x:[-30,0],opacity:[0,1]}}
                             transition={{duration: 0.8, delay: 0.2}}
                         >
                             <button type='button' onClick={visibleItems<= 12 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 12 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>
-                        </motion.div>
+                        </div>
                     ) : null}
                 </div>
-                
                 <ProjectModel open={openModal} project={selectedWork} onClose={(() => setOpenModal(false))}/>
             </>
         )

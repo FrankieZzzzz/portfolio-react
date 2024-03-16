@@ -7,7 +7,7 @@ import { faXmark,faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import Video1 from "../../assets/animation.mp4";
 import Video2 from "../../assets/animation2.mp4";
-import  {motion} from 'framer-motion';
+// import  {motion} from 'framer-motion';
 import ReactPlayer from 'react-player';
 import 'balloon-css';
 
@@ -38,16 +38,15 @@ const ProjectModel = ({open, onClose, project}) => {
     } else{
         return(
             <div className='app__overlay' onClick={handleOverlayClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <motion.div 
+                <div 
                     className='app__projectModel'
-                    animate={animateCard}
-                    transition = {{duration: 0.5, delayChildren: 0.5}}
+                   
                 >
                     <div className='app__projectModel-container'>
                         {/* close btn */}
                         <FontAwesomeIcon icon={faXmark} className='closeBtn' onClick={onClose}/>
                         {/* icon link */}
-                        <motion.div className='app__project-iconList'>
+                        <div className='app__project-iconList'>
                             <div className='app__flex iconList'>
                                 {project.netlify &&(
                                     <a href={project.netlify} target='_blank' rel='noreferrer'>
@@ -78,9 +77,9 @@ const ProjectModel = ({open, onClose, project}) => {
                                     </a>
                                 )}
                             </div>
-                        </motion.div>
+                        </div>
                         {/* image content */}
-                        <motion.div className='app__projectModel-imgContent'>
+                        <div className='app__projectModel-imgContent'>
                             {project.imgUrl ? (
                                  <>  
                                     <div className='app_project-introBox'>
@@ -123,9 +122,9 @@ const ProjectModel = ({open, onClose, project}) => {
                                     <p className='ending_content'>THANK YOU</p>
                                 </>
                             ) : ('')}
-                        </motion.div>
+                        </div>
                     </div>
-                </motion.div>
+                </div>
             </div>
         )
     }
