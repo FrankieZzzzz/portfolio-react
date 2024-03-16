@@ -110,6 +110,9 @@ const ProjectModel = ({open, onClose, project}) => {
                             {project.imgUrl_5 ? (
                                 <img src={urlFor(project.imgUrl_5)} alt={project.name} />
                             ) : ('')}
+                             {<project className="imgUrl_6"></project> ? (
+                                <img src={urlFor(project.imgUrl_6)} alt={project.name} />
+                            ) : ('')}
                             {project.videoFile1 ? (
                                 <>
                                     <ReactPlayer url={Video1} controls={true} className='video_position' autoPlay= {true} />
