@@ -3,7 +3,7 @@ import '../Project/Project.scss'
 import './Footer.scss';
 
 import {AppWrap} from '../../wrapper';
-import  {motion} from 'framer-motion';
+import {motion} from 'framer-motion';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faArrowRight, faFile,faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
@@ -45,7 +45,6 @@ const Footer = () => {
     });
   }else{
     setIsFormSubmitted(false);
-
   }
 }
 
@@ -83,15 +82,15 @@ const Footer = () => {
         {!isFormSubmitted ? (
           <div className='app__footer-form '>
             <div className='input-box'>
-              <label for='name' autoComplete="on">Name *</label>
+              <label htmlFor='name' autoComplete="on">Name *</label>
               <input className='p-text' type="text" name="name" value={name} onChange={handleChangeInput} id='name' required/>
             </div>
             <div className='input-box'>
-              <label for='email'>Email *</label>
+              <label htmlFor='email'>Email *</label>
               <input className='p-text' type="email" name="email" value={email} onChange={handleChangeInput} id='email' required/>
             </div>
             <div className='input-box'>
-              <label for='message'>Message</label>
+              <label htmlFor='message'>Message</label>
               <input className='p-text' type="text" name="message" value={message} onChange={handleChangeInput} id='message' />
             </div>
             <button type='button' className='p-text'onClick={handleChangeSubmit}>{loading ? 'Sending' : 'Send Message'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>

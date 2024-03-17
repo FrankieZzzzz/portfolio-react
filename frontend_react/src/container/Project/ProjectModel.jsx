@@ -7,7 +7,7 @@ import { faXmark,faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import Video1 from "../../assets/animation.mp4";
 import Video2 from "../../assets/animation2.mp4";
-// import  {motion} from 'framer-motion';
+import {motion} from 'framer-motion';
 import ReactPlayer from 'react-player';
 import 'balloon-css';
 
@@ -38,9 +38,10 @@ const ProjectModel = ({open, onClose, project}) => {
     } else{
         return(
             <div className='app__overlay' onClick={handleOverlayClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <div 
+                <motion.div 
+                    animate={animateCard}
+                    transition = {{duration: 0.5, delayChildren: 0.8}}
                     className='app__projectModel'
-                   
                 >
                     <div className='app__projectModel-container'>
                         {/* close btn */}
@@ -51,7 +52,6 @@ const ProjectModel = ({open, onClose, project}) => {
                                 {project.netlify &&(
                                     <a href={project.netlify} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>
-                                            {/* <FontAwesomeIcon icon={faCircleNodes} /> */}
                                             <button aria-label="Website" data-balloon-pos="up"><FontAwesomeIcon icon={faCircleNodes} /></button>
 
                                         </div>
@@ -60,7 +60,6 @@ const ProjectModel = ({open, onClose, project}) => {
                                 {project.projectLink && (
                                     <a href={project.projectLink} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>
-                                            {/* <FontAwesomeIcon icon={faSquareBehance} /> */}
                                             <button aria-label="Behance" data-balloon-pos="up"><FontAwesomeIcon icon={faSquareBehance} /></button>
 
                                         </div>
@@ -69,10 +68,7 @@ const ProjectModel = ({open, onClose, project}) => {
                                 {project.codeLink && (
                                     <a href={project.codeLink} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>
-                                            {/* <FontAwesomeIcon icon={faGithub} /> */}
                                             <button aria-label="Github" data-balloon-pos="up"><FontAwesomeIcon icon={faGithub} /></button>
-
-                                             
                                         </div>
                                     </a>
                                 )}
@@ -110,7 +106,7 @@ const ProjectModel = ({open, onClose, project}) => {
                             {project.imgUrl_5 ? (
                                 <img src={urlFor(project.imgUrl_5)} alt={project.name} />
                             ) : ('')}
-                             {<project className="imgUrl_6"></project> ? (
+                             {project.imgUrl_6 ? (
                                 <img src={urlFor(project.imgUrl_6)} alt={project.name} />
                             ) : ('')}
                             {project.videoFile1 ? (
@@ -127,7 +123,7 @@ const ProjectModel = ({open, onClose, project}) => {
                             ) : ('')}
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         )
     }
