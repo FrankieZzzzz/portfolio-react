@@ -87,7 +87,7 @@ const Header = () => {
         {/* left side icon */}
         {/* textcontent */}
         <motion.div 
-          whileinview={{x:[-100,0],opacity:[0,1]}}
+          whileInView={{x:[-100,0],opacity:[0,1]}}
           transition={{duration: 0.8}}
           className='app_project-info' >
           <div className='app_project-title'>
@@ -105,11 +105,11 @@ const Header = () => {
         {/* textcontent */}
         {/* image */}
         <motion.div 
-          whileinview={{ opacity:[0,1] }}
+          whileInView={{ opacity:[0,1] }}
           transition={{ duration: 1, delayChildren: 0.5 }}
           className='app_header-img' >
           <motion.img 
-            whileinview={{ opacity:[0,1] }}
+            whileInView={{ opacity:[0,1] }}
             transition={{ duration: 1, ease: 'easeInOut' }}
             src={images.Frankie}
             className='image_profile' />
@@ -130,12 +130,12 @@ const Header = () => {
             <span className='p-text'>About</span>
           </motion.div>
           <motion.div
-              whileinview={{opacity: [0,1]}} 
+              whileInView={{opacity: [0,1]}} 
               transition={{ duration: 1, delayChildren: 1 ,ease: 'easeIn' }}
               className='app_mobileText-img'
               >
               <motion.img
-                whileinview={{opacity: [0,1]}} 
+                whileInView={{opacity: [0,1]}} 
                 transition={{ duration: 0.65, ease: 'easeInOut'}}
                 src={images.Frankie}
                 className='image_profile'

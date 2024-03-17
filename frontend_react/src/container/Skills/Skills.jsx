@@ -28,7 +28,7 @@ const Skills = () => {
   return (
     <div className='app__skills ' id='Skills'>
         <motion.div 
-            whileinview={{x:[-100,0],opacity:[0,1]}}
+            whileInView={{x:[-100,0],opacity:[0,1]}}
             transition={{duration: 0.8}}
             className='app_project-info' 
         >
@@ -44,7 +44,7 @@ const Skills = () => {
             <div className='app__skills-list'>
                 {skills.map((skills) => (
                 <motion.div 
-                    whileinview={{opacity: [0,1]}}
+                    whileInView={{opacity: [0,1]}}
                     transition={{duration: 2.3, delayChildren:1}}
                     className='app__skills-item app__flex' 
                     key={skills.name} 
@@ -57,14 +57,14 @@ const Skills = () => {
             </div>
             {/* experience list */}
             <motion.div 
-                whileinview={{ opacity:[0,1] }}
+                whileInView={{ opacity:[0,1] }}
                 transition={{ duration: 1.5, delayChildren: 1 }}
                 className='app__skills-exp'>
                 {experiences.map((experiences) => (
                     <motion.div 
                         className='app__skills-exp-item'  
                         key={experiences.year} 
-                        whileinview={{opacity: [0,1]}}
+                        whileInView={{opacity: [0,1]}}
                         transition={{duration: 2.3, staggerChildren:1.5}}
                         >
                         <div className='app__skills-exp-year'>

@@ -18,8 +18,6 @@ const Project = () => {
     const [works, setWorks] = useState([]);
     const [filterWork, setFilterWork] = useState([]);
     const [selectedWork, setSelectedWork] = useState('');
-
-
     const [visibleItems, setVisibleItems] = useState(8)
     const loadMoreItems = () => {
         setVisibleItems( prevValue => prevValue + 4)
@@ -55,7 +53,6 @@ const Project = () => {
             const handleResize = () => {
                 setIsMobile(window.innerWidth <= 1200);
             };
-
             window.addEventListener('resize', handleResize )
             return () => {
                 window.removeEventListener('resize', handleResize);
@@ -75,7 +72,7 @@ const Project = () => {
             <>
                 <div className='app__projects' id='Project'>
                     <motion.div 
-                        whileinview={{x:[-100,0],opacity:[0,1]}}
+                        whileInView={{x:[-100,0],opacity:[0,1]}}
                         transition={{duration: 0.8}}
                         className='app_project-info' >
                         <div className='app_project-title'>
@@ -86,7 +83,7 @@ const Project = () => {
                         </div>
                     </motion.div>
                     <motion.div 
-                        whileinview={{opacity: [0,1]}}
+                        whileInView={{opacity: [0,1]}}
                         transition={{duration: 2.3, delayChildren:1}}
                         className="app__projects-filter">
                         {['Everything', 'Graphic Design', 'Web Design', 'Branding','UI/UX'].map((item, index) => (
@@ -158,7 +155,7 @@ const Project = () => {
             <>
                 <div className='app__projects'>
                     <motion.div
-                        whileinview={{x:[-100,0],opacity:[0,1]}}
+                        whileInView={{x:[-100,0],opacity:[0,1]}}
                         transition={{duration: 0.8}}
                         className='app_project-info'
                     >
@@ -171,17 +168,19 @@ const Project = () => {
                     </motion.div>
                     {/* filter */}
                     <motion.div 
-                        whileinview={{opacity: [0,1]}}
+                        whileInView={{opacity: 1}}
                         transition={{duration: 2.3, delayChildren:1}}
                         className="app__projects-filter">
                         {['Everything', 'Graphic Design', 'Web Design','Branding','UI/UX',].map((item, index) => (
-                            <div
+                            <motion.div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
                                 className={`app__projects-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
                             >
                                 {item}
-                            </div>
+                            </motion.div>
                         ))}
                     </motion.div>
                     {/* project box */}
@@ -194,7 +193,7 @@ const Project = () => {
                             <motion.div 
                                 className='app__projects-item app__flex' 
                                 key={index} 
-                                whileinview={{opacity: [0,1]}} 
+                                whileInView={{opacity: [0,1]}} 
                                 transition={{ duration: 2, delayChildren: 1 ,ease: 'easeIn' }}
                                 >
                                 <div 
@@ -222,7 +221,7 @@ const Project = () => {
                     {activeFilter === 'Everything'? (
                         <div
                             className='app__flex'
-                            whileinview={{x:[-30,0],opacity:[0,1]}}
+                            whileInView={{x:[-30,0],opacity:[0,1]}}
                             transition={{duration: 0.8, delay: 0.2}}
                         >
                             <button type='button' onClick={visibleItems<= 12 ? loadMoreItems : loadMLessItems} className='app__project-loadMoreBtn'>{visibleItems <= 12 ? 'Load more' : 'Load less'}<span><FontAwesomeIcon icon={faArrowRight} /></span></button>

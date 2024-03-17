@@ -53,7 +53,7 @@ const Statement = () => {
     <div className='app__statement' id='Statement'>
       <div className='app_project-info'>
         <motion.div 
-          whileinview={{x:[-100,0],opacity:[0,1]}}
+          whileInView={{x:[-100,0],opacity:[0,1]}}
           transition={{duration: 0.8}}  
           className='header-title app_flex'>
             <FontAwesomeIcon icon={faArrowRight} />
