@@ -18,8 +18,6 @@ export const ProjectCard = ({ title, description, imgUrl, netlify, behanceLink, 
             window.removeEventListener('resize', handleResize);
         };
     }, [])
-    
-    
     if(isMobile) {
         return(
            <li className='app__workCard-Mobile'>
@@ -32,7 +30,6 @@ export const ProjectCard = ({ title, description, imgUrl, netlify, behanceLink, 
                             <span>{description}</span>
                         </div>
                         <div className='app__cardIcon'>
-                            
                             {behanceLink && (
                                 <a href={behanceLink} className='projectLink' target='_blank' rel="noreferrer">
                                     <FontAwesomeIcon icon={faSquareBehance} />

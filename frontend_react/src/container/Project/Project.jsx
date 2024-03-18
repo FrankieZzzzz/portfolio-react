@@ -84,9 +84,9 @@ const Project = () => {
                     </motion.div>
                     <motion.div 
                         whileInView={{opacity: [0,1]}}
-                        transition={{duration: 2.3, delayChildren:1}}
+                        transition={{duration: 1.6, delayChildren:1}}
                         className="app__projects-filter">
-                        {['Everything', 'Graphic Design', 'Web Design', 'Branding','UI/UX'].map((item, index) => (
+                        {['Everything', 'Graphic Design', 'Web Design | Development', 'Branding','UI/UX'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
@@ -169,9 +169,9 @@ const Project = () => {
                     {/* filter */}
                     <motion.div 
                         whileInView={{opacity: [0.3,1]}}
-                        transition={{duration: 3, delayChildren:1}}
+                        transition={{duration: 1.6, delayChildren:1}}
                         className="app__projects-filter">
-                        {['Everything', 'Graphic Design', 'Web Design','Branding','UI/UX',].map((item, index) => (
+                        {['Everything', 'Graphic Design', 'Web Design | Development','Branding','UI/UX',].map((item, index) => (
                             <motion.div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}

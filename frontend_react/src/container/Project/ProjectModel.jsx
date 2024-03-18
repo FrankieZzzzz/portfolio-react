@@ -74,6 +74,7 @@ const ProjectModel = ({open, onClose, project}) => {
                         </div>
                         {/* image content */}
                         <div className='app__projectModel-imgContent'>
+                            {/* intro section */}
                             {project.imgUrl ? (
                                  <>  
                                     <div className='app_project-introBox'>

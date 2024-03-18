@@ -21,9 +21,7 @@ const Footer = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value })
   }
-
   const handleChangeSubmit = () => {
-
     const contact = {
       _type: 'contact',
       name: name,
@@ -47,7 +45,6 @@ const Footer = () => {
     setIsFormSubmitted(false);
   }
 }
-
   const scrollToTop2 = () => {
     window.scrollTo({
       top:0,

@@ -5,7 +5,6 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import {motion} from 'framer-motion';
 
-
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,5 +59,4 @@ const Navbar = () => {
     </nav>
   )
 }
-
 export default Navbar

@@ -10,7 +10,6 @@ import WorldClock from '../assets/world-clock.png';
 import Frankie from '../assets/Frankie.png';
 import Deco from '../assets/logoloop4.gif';
 
-
 export default{
     Frankie,
     Logo,
