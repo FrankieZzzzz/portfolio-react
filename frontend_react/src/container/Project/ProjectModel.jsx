@@ -53,7 +53,6 @@ const ProjectModel = ({open, onClose, project}) => {
                                     <a href={project.netlify} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>
                                             <button aria-label="Website" data-balloon-pos="up"><FontAwesomeIcon icon={faCircleNodes} /></button>
-
                                         </div>
                                     </a>
                                 )}
@@ -61,7 +60,6 @@ const ProjectModel = ({open, onClose, project}) => {
                                     <a href={project.projectLink} target='_blank' rel='noreferrer'>
                                         <div className='app__flex app__project-icon'>
                                             <button aria-label="Behance" data-balloon-pos="up"><FontAwesomeIcon icon={faSquareBehance} /></button>
-
                                         </div>
                                     </a>
                                 )}

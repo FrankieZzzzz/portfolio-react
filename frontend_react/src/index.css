@@ -19,4 +19,13 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+   
+}
+*::-webkit-scrollbar {
+    background-color: #0D192E;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #152540;
+    border-radius: 20px;
 }

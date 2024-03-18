@@ -98,7 +98,7 @@ const Header = () => {
             <div className='header-content app__flex'>
               <h1 className='p-text'>Frankie Zhong</h1>
               <h2 className='p-text ' >I build things for <span>{typeEffect}</span></h2>
-              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Designer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Designer | Developer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
             </div>
           </div>
         </motion.div>
@@ -124,25 +124,28 @@ const Header = () => {
       <div id='app__header-mobile' className='app__header'>
         <div className='app_header-mobileText app_project-info' >
           <motion.div 
-          
+            whileInView={{x:[-100,0],opacity:[0,1]}}
+            transition={{duration: 0.8}}
             className='header-title app_flex'>
             <FontAwesomeIcon icon={faArrowRight} />
             <span className='p-text'>About</span>
           </motion.div>
           <motion.div
-              whileInView={{opacity: [0,1]}} 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 1, delayChildren: 1 ,ease: 'easeIn' }}
               className='app_mobileText-img'
               >
               <motion.img
-                whileInView={{opacity: [0,1]}} 
-                transition={{ duration: 0.65, ease: 'easeInOut'}}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.85, ease: 'easeInOut'}}
                 src={images.Frankie}
                 className='image_profile'
               />
           </motion.div>
           <div className='header-content app__flex'>
-              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Designer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
+              <p>Hello! My name is Frankie and a passionate <span>Graphic Designer</span> and <span>Web Designer | Developer</span>. With a degree in <span>Art Design</span>, I've built a solid aesthetics and design foundation. Driven by my love for digital media and a commitment to continuous learning, I approach each project as a <span>proactive problem-solver</span>. Let's collaborate and bring innovative ideas to life!</p>
           </div>
         </div>
       </div>
