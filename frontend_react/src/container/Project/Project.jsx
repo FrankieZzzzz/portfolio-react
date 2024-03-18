@@ -86,7 +86,7 @@ const Project = () => {
                         whileInView={{opacity: [0,1]}}
                         transition={{duration: 1.6, delayChildren:1}}
                         className="app__projects-filter">
-                        {['Everything', 'Graphic Design', 'Web Design | Development', 'Branding','UI/UX'].map((item, index) => (
+                        {['Everything', 'Graphic Design', 'Web Design | Development', 'UI/UX | Branding'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
@@ -171,7 +171,7 @@ const Project = () => {
                         whileInView={{opacity: [0.3,1]}}
                         transition={{duration: 1.6, delayChildren:1}}
                         className="app__projects-filter">
-                        {['Everything', 'Graphic Design', 'Web Design | Development','Branding','UI/UX',].map((item, index) => (
+                        {['Everything', 'Graphic Design', 'Web Design | Development','UI/UX | Branding'].map((item, index) => (
                             <motion.div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
