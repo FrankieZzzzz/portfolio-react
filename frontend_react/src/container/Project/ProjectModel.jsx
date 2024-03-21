@@ -90,9 +90,33 @@ const ProjectModel = ({open, onClose, project}) => {
                                             <p>{project.imgUrl_description.categories}</p>
                                         </div>
                                     </div>
+                                    <div className='app__flex iconList_mobile'>
+                                        {project.netlify &&(
+                                            <a href={project.netlify} target='_blank' rel='noreferrer'>
+                                                <div className='app__flex app__project-icon'>
+                                                    <button aria-label="Website" data-balloon-pos="up"><FontAwesomeIcon icon={faCircleNodes} /></button>
+                                                </div>
+                                            </a>
+                                        )}
+                                        {project.projectLink && (
+                                            <a href={project.projectLink} target='_blank' rel='noreferrer'>
+                                                <div className='app__flex app__project-icon'>
+                                                    <button aria-label="Behance" data-balloon-pos="up"><FontAwesomeIcon icon={faSquareBehance} /></button>
+                                                </div>
+                                            </a>
+                                        )}
+                                        {project.codeLink && (
+                                            <a href={project.codeLink} target='_blank' rel='noreferrer'>
+                                                <div className='app__flex app__project-icon'>
+                                                    <button aria-label="Github" data-balloon-pos="up"><FontAwesomeIcon icon={faGithub} /></button>
+                                                </div>
+                                            </a>
+                                        )}
+                                    </div>
                                     <img src={urlFor(project.imgUrl_1)} alt={project.name} />
                                 </>
                             ) : ('')}
+
                             {project.imgUrl_2 ? (
                                 <img src={urlFor(project.imgUrl_2)} alt={project.name} />
                             ) : ('')}

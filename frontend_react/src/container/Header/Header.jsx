@@ -1,13 +1,13 @@
 
-import React, {useState, useEffect} from 'react'
-
+import React, {useState, useEffect, useRef} from 'react';
 import './Header.scss';
-import '../Project/Project.scss'
+import '../Project/Project.scss';
+import SplitType from 'split-type';
 
 import {useTypewriter} from 'react-simple-typewriter'
 import {motion, useAnimation} from 'framer-motion';
 import {images} from '../../constants';
-
+import { gsap } from 'gsap';
 // icon set
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faArrowRight, faFile,faArrowUp } from "@fortawesome/free-solid-svg-icons";
