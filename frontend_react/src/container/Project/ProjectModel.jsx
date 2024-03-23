@@ -7,6 +7,7 @@ import { faXmark,faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import Video1 from "../../assets/animation.mp4";
 import Video2 from "../../assets/animation2.mp4";
+import Video3 from "../../assets/animation3.mp4";
 import {motion} from 'framer-motion';
 import ReactPlayer from 'react-player';
 import 'balloon-css';

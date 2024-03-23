@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.29aad4a2.css",
-    "main.js": "/static/js/main.12ed058d.js",
+    "main.css": "/static/css/main.9c4920c1.css",
+    "main.js": "/static/js/main.e0583ccd.js",
     "static/js/990.efc5417f.chunk.js": "/static/js/990.efc5417f.chunk.js",
     "static/js/726.e60714fe.chunk.js": "/static/js/726.e60714fe.chunk.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.cd657de2.chunk.js",
@@ -19,6 +19,7 @@
     "reactPlayerPreview.js": "/static/js/reactPlayerPreview.02c82c84.chunk.js",
     "static/media/animation2.mp4": "/static/media/animation2.5239b17aade0ac7a6b70.mp4",
     "static/media/animation.mp4": "/static/media/animation.e0471b000142663e2111.mp4",
+    "static/media/animation3.mp4": "/static/media/animation3.55d029fd3b2bd36050ff.mp4",
     "static/media/logoloop4.gif": "/static/media/logoloop4.f797a9a6d369692248bb.gif",
     "static/media/poster-design.jpg": "/static/media/poster-design.076bcea3e05f2257affd.jpg",
     "static/media/Ux-case-study.jpg": "/static/media/Ux-case-study.9626130f53309824f44c.jpg",
@@ -31,8 +32,8 @@
     "static/media/weather-app.png": "/static/media/weather-app.0eb9abc402a679212f1e.png",
     "static/media/world-clock.png": "/static/media/world-clock.725da7f669fd838ff896.png",
     "index.html": "/index.html",
-    "main.29aad4a2.css.map": "/static/css/main.29aad4a2.css.map",
-    "main.12ed058d.js.map": "/static/js/main.12ed058d.js.map",
+    "main.9c4920c1.css.map": "/static/css/main.9c4920c1.css.map",
+    "main.e0583ccd.js.map": "/static/js/main.e0583ccd.js.map",
     "990.efc5417f.chunk.js.map": "/static/js/990.efc5417f.chunk.js.map",
     "726.e60714fe.chunk.js.map": "/static/js/726.e60714fe.chunk.js.map",
     "reactPlayerYouTube.cd657de2.chunk.js.map": "/static/js/reactPlayerYouTube.cd657de2.chunk.js.map",
@@ -50,7 +51,7 @@
     "reactPlayerPreview.02c82c84.chunk.js.map": "/static/js/reactPlayerPreview.02c82c84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29aad4a2.css",
-    "static/js/main.12ed058d.js"
+    "static/css/main.9c4920c1.css",
+    "static/js/main.e0583ccd.js"
   ]
 }
