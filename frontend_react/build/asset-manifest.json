@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c4920c1.css",
+    "main.css": "/static/css/main.07e02068.css",
     "main.js": "/static/js/main.e0583ccd.js",
     "static/js/990.efc5417f.chunk.js": "/static/js/990.efc5417f.chunk.js",
     "static/js/726.e60714fe.chunk.js": "/static/js/726.e60714fe.chunk.js",
@@ -32,7 +32,7 @@
     "static/media/weather-app.png": "/static/media/weather-app.0eb9abc402a679212f1e.png",
     "static/media/world-clock.png": "/static/media/world-clock.725da7f669fd838ff896.png",
     "index.html": "/index.html",
-    "main.9c4920c1.css.map": "/static/css/main.9c4920c1.css.map",
+    "main.07e02068.css.map": "/static/css/main.07e02068.css.map",
     "main.e0583ccd.js.map": "/static/js/main.e0583ccd.js.map",
     "990.efc5417f.chunk.js.map": "/static/js/990.efc5417f.chunk.js.map",
     "726.e60714fe.chunk.js.map": "/static/js/726.e60714fe.chunk.js.map",
@@ -51,7 +51,7 @@
     "reactPlayerPreview.02c82c84.chunk.js.map": "/static/js/reactPlayerPreview.02c82c84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c4920c1.css",
+    "static/css/main.07e02068.css",
     "static/js/main.e0583ccd.js"
   ]
 }
