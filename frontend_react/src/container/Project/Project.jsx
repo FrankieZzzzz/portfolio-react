@@ -78,7 +78,7 @@ const Project = () => {
                         <div className='app_project-title'>
                             <div className='header-title app_flex'>
                                 <FontAwesomeIcon icon={faArrowRight} />
-                                <span className='p-text'>Something I've Built</span>
+                                <span className='p-text'>Somethings I've Built</span>
                             </div>
                         </div>
                     </motion.div>
@@ -86,7 +86,7 @@ const Project = () => {
                         whileInView={{opacity: [0,1]}}
                         transition={{duration: 1.6, delayChildren:1}}
                         className="app__projects-filter">
-                        {['Everything', 'Graphic Design', 'Web Design | Development', 'UI/UX | Branding'].map((item, index) => (
+                        {['Everything', 'Web Design | Development', 'Graphic Design', 'UI/UX | Branding'].map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
@@ -162,7 +162,7 @@ const Project = () => {
                         <div className='project-title'>
                         <div className='header-title app_flex'>
                             <FontAwesomeIcon icon={faArrowRight} />
-                            <span className='p-text'>Something I've Built</span>
+                            <span className='p-text'>Somethings I've Built</span>
                         </div>
                         </div>
                     </motion.div>
@@ -171,7 +171,7 @@ const Project = () => {
                         whileInView={{opacity: [0.3,1]}}
                         transition={{duration: 1.6, delayChildren:1}}
                         className="app__projects-filter">
-                        {['Everything', 'Graphic Design', 'Web Design | Development','UI/UX | Branding'].map((item, index) => (
+                        {['Everything', 'Web Design | Development', 'Graphic Design', 'UI/UX | Branding'].map((item, index) => (
                             <motion.div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}

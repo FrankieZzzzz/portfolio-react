@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.07e02068.css",
-    "main.js": "/static/js/main.e0583ccd.js",
+    "main.css": "/static/css/main.bddbd2eb.css",
+    "main.js": "/static/js/main.f7cd5618.js",
     "static/js/990.efc5417f.chunk.js": "/static/js/990.efc5417f.chunk.js",
     "static/js/726.e60714fe.chunk.js": "/static/js/726.e60714fe.chunk.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.cd657de2.chunk.js",
@@ -32,8 +32,8 @@
     "static/media/weather-app.png": "/static/media/weather-app.0eb9abc402a679212f1e.png",
     "static/media/world-clock.png": "/static/media/world-clock.725da7f669fd838ff896.png",
     "index.html": "/index.html",
-    "main.07e02068.css.map": "/static/css/main.07e02068.css.map",
-    "main.e0583ccd.js.map": "/static/js/main.e0583ccd.js.map",
+    "main.bddbd2eb.css.map": "/static/css/main.bddbd2eb.css.map",
+    "main.f7cd5618.js.map": "/static/js/main.f7cd5618.js.map",
     "990.efc5417f.chunk.js.map": "/static/js/990.efc5417f.chunk.js.map",
     "726.e60714fe.chunk.js.map": "/static/js/726.e60714fe.chunk.js.map",
     "reactPlayerYouTube.cd657de2.chunk.js.map": "/static/js/reactPlayerYouTube.cd657de2.chunk.js.map",
@@ -51,7 +51,7 @@
     "reactPlayerPreview.02c82c84.chunk.js.map": "/static/js/reactPlayerPreview.02c82c84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07e02068.css",
-    "static/js/main.e0583ccd.js"
+    "static/css/main.bddbd2eb.css",
+    "static/js/main.f7cd5618.js"
   ]
 }
